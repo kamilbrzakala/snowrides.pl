@@ -1,0 +1,2020 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pl-PL" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+   <!-- ******************************************************************** -->
+   <!-- * Title ************************************************************ -->
+   <!-- ******************************************************************** -->
+   <title>
+    Produkty | STEEZE.PL
+   </title>
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+   <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-124593935-1">
+   </script>
+   <script>
+    window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-124593935-1');
+   </script>
+   <link href="http://gmpg.org/xfn/11" rel="profile"/>
+   <link href="http://steeze.pl/xmlrpc.php" rel="pingback"/>
+   <!-- ******************************************************************** -->
+   <!-- * Custom Favicon *************************************************** -->
+   <!-- ******************************************************************** -->
+   <!-- ******************************************************************** -->
+   <!-- * Favicon ********************************************************** -->
+   <!-- ******************************************************************** -->
+   <link href="http://steeze.pl/wp-content/uploads/2018/09/41294800_2161651574101720_8767112382485889024_n.png" rel="shortcut icon" type="image/x-icon">
+    <!-- ******************************************************************** -->
+    <!-- * Custom Header JavaScript Code ************************************ -->
+    <!-- ******************************************************************** -->
+    <script type="text/javascript">
+     /*!
+ * JavaScript Cookie v2.2.0
+ * https://github.com/js-cookie/js-cookie
+ *
+ * Copyright 2006, 2015 Klaus Hartl & Fagner Brack
+ * Released under the MIT license
+ */
+;(function (factory) {
+	var registeredInModuleLoader;
+	if (typeof define === 'function' && define.amd) {
+		define(factory);
+		registeredInModuleLoader = true;
+	}
+	if (typeof exports === 'object') {
+		module.exports = factory();
+		registeredInModuleLoader = true;
+	}
+	if (!registeredInModuleLoader) {
+		var OldCookies = window.Cookies;
+		var api = window.Cookies = factory();
+		api.noConflict = function () {
+			window.Cookies = OldCookies;
+			return api;
+		};
+	}
+}(function () {
+	function extend () {
+		var i = 0;
+		var result = {};
+		for (; i < arguments.length; i++) {
+			var attributes = arguments[ i ];
+			for (var key in attributes) {
+				result[key] = attributes[key];
+			}
+		}
+		return result;
+	}
+
+	function init (converter) {
+		function api (key, value, attributes) {
+			if (typeof document === 'undefined') {
+				return;
+			}
+
+			// Write
+
+			if (arguments.length > 1) {
+				attributes = extend({
+					path: '/'
+				}, api.defaults, attributes);
+
+				if (typeof attributes.expires === 'number') {
+					attributes.expires = new Date(new Date() * 1 + attributes.expires * 864e+5);
+				}
+
+				// We're using "expires" because "max-age" is not supported by IE
+				attributes.expires = attributes.expires ? attributes.expires.toUTCString() : '';
+
+				try {
+					var result = JSON.stringify(value);
+					if (/^[\{\[]/.test(result)) {
+						value = result;
+					}
+				} catch (e) {}
+
+				value = converter.write ?
+					converter.write(value, key) :
+					encodeURIComponent(String(value))
+						.replace(/%(23|24|26|2B|3A|3C|3E|3D|2F|3F|40|5B|5D|5E|60|7B|7D|7C)/g, decodeURIComponent);
+
+				key = encodeURIComponent(String(key))
+					.replace(/%(23|24|26|2B|5E|60|7C)/g, decodeURIComponent)
+					.replace(/[\(\)]/g, escape);
+
+				var stringifiedAttributes = '';
+				for (var attributeName in attributes) {
+					if (!attributes[attributeName]) {
+						continue;
+					}
+					stringifiedAttributes += '; ' + attributeName;
+					if (attributes[attributeName] === true) {
+						continue;
+					}
+
+					// Considers RFC 6265 section 5.2:
+					// ...
+					// 3.  If the remaining unparsed-attributes contains a %x3B (";")
+					//     character:
+					// Consume the characters of the unparsed-attributes up to,
+					// not including, the first %x3B (";") character.
+					// ...
+					stringifiedAttributes += '=' + attributes[attributeName].split(';')[0];
+				}
+
+				return (document.cookie = key + '=' + value + stringifiedAttributes);
+			}
+
+			// Read
+
+			var jar = {};
+			var decode = function (s) {
+				return s.replace(/(%[0-9A-Z]{2})+/g, decodeURIComponent);
+			};
+			// To prevent the for loop in the first place assign an empty array
+			// in case there are no cookies at all.
+			var cookies = document.cookie ? document.cookie.split('; ') : [];
+			var i = 0;
+
+			for (; i < cookies.length; i++) {
+				var parts = cookies[i].split('=');
+				var cookie = parts.slice(1).join('=');
+
+				if (!this.json && cookie.charAt(0) === '"') {
+					cookie = cookie.slice(1, -1);
+				}
+
+				try {
+					var name = decode(parts[0]);
+					cookie = (converter.read || converter)(cookie, name) ||
+						decode(cookie);
+
+					if (this.json) {
+						try {
+							cookie = JSON.parse(cookie);
+						} catch (e) {}
+					}
+
+					jar[name] = cookie;
+
+					if (key === name) {
+						break;
+					}
+				} catch (e) {}
+			}
+
+			return key ? jar[key] : jar;
+		}
+
+		api.set = api;
+		api.get = function (key) {
+			return api.call(api, key);
+		};
+		api.getJSON = function (key) {
+			return api.call({
+				json: true
+			}, key);
+		};
+		api.remove = function (key, attributes) {
+			api(key, '', extend(attributes, {
+				expires: -1
+			}));
+		};
+
+		api.defaults = {};
+
+		api.withConverter = init;
+
+		return api;
+	}
+
+	return init(function () {});
+}));
+    </script>
+    <!-- ******************************************************************** -->
+    <!-- * Sticky header for mobiles **************************************** -->
+    <!-- ******************************************************************** -->
+    <script type="text/javascript">
+     var stickyHeader = 1;
+    </script>
+    <!-- ******************************************************************** -->
+    <!-- * WordPress wp_head() ********************************************** -->
+    <!-- ******************************************************************** -->
+    <script>
+     /* You can add more configuration options to webfontloader by previously defining the WebFontConfig with your options */
+                            if ( typeof WebFontConfig === "undefined" ) {
+                                WebFontConfig = new Object();
+                            }
+                            WebFontConfig['google'] = {families: ['Nunito:300,400,700&amp;subset=latin']};
+
+                            (function() {
+                                var wf = document.createElement( 'script' );
+                                wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.3/webfont.js';
+                                wf.type = 'text/javascript';
+                                wf.async = 'true';
+                                var s = document.getElementsByTagName( 'script' )[0];
+                                s.parentNode.insertBefore( wf, s );
+                            })();
+    </script>
+    <link href="//s.w.org" rel="dns-prefetch">
+     <link href="http://steeze.pl/feed/" rel="alternate" title="STEEZE.PL » Kanał z wpisami" type="application/rss+xml"/>
+     <link href="http://steeze.pl/comments/feed/" rel="alternate" title="STEEZE.PL » Kanał z komentarzami" type="application/rss+xml"/>
+     <link href="http://steeze.pl/wyjazdy/feed/" rel="alternate" title="Kanał STEEZE.PL » Produkty" type="application/rss+xml"/>
+     <script type="text/javascript">
+      window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/steeze.pl\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.6"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56692,8205,9792,65039],[55357,56692,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+     </script>
+     <style type="text/css">
+      img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+     </style>
+     <link href="http://steeze.pl/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.0.2" id="contact-form-7-css" media="all" rel="stylesheet" type="text/css"/>
+     <link href="http://steeze.pl/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=3.4.1" id="woocommerce-layout-css" media="all" rel="stylesheet" type="text/css"/>
+     <link href="http://steeze.pl/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=3.4.1" id="woocommerce-smallscreen-css" media="only screen and (max-width: 768px)" rel="stylesheet" type="text/css"/>
+     <link href="http://steeze.pl/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=3.4.1" id="woocommerce-general-css" media="all" rel="stylesheet" type="text/css"/>
+     <style id="woocommerce-inline-inline-css" type="text/css">
+      .woocommerce form .form-row .required { visibility: visible; }
+     </style>
+     <link href="http://steeze.pl/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=5.4.5" id="js_composer_front-css" media="all" rel="stylesheet" type="text/css"/>
+     <link href="http://steeze.pl/wp-content/themes/mrtailor/css/app.css?ver=1.0" id="mr_tailor-app-css" media="all" rel="stylesheet" type="text/css"/>
+     <link href="http://steeze.pl/wp-content/themes/mrtailor/css/easyzoom.css?ver=1.0" id="mr_tailor-easyzoom-css" media="all" rel="stylesheet" type="text/css"/>
+     <link href="http://steeze.pl/wp-content/themes/mrtailor/css/woocommerce-overwrite.css?ver=1.0" id="mr_tailor-woocommerce-overwrite-css" media="all" rel="stylesheet" type="text/css"/>
+     <link href="http://steeze.pl/wp-content/themes/mrtailor/css/animate.min.css?ver=1.0" id="mr_tailor-animate-css" media="all" rel="stylesheet" type="text/css"/>
+     <link href="http://steeze.pl/wp-content/themes/mrtailor/css/animations-products-grid.css?ver=1.0" id="mr_tailor-animations-products-grid-css" media="all" rel="stylesheet" type="text/css"/>
+     <link href="http://steeze.pl/wp-content/themes/mrtailor/css/fresco/fresco.css?ver=1.3.0" id="mr_tailor-fresco-css" media="all" rel="stylesheet" type="text/css"/>
+     <link href="http://steeze.pl/wp-content/themes/mrtailor/css/swiper.min.css?ver=3.3.1" id="mr_tailor-swiper-css" media="all" rel="stylesheet" type="text/css"/>
+     <link href="http://steeze.pl/wp-content/themes/mrtailor/css/owl.carousel.css?ver=1.3.1" id="mr_tailor-owl-css" media="all" rel="stylesheet" type="text/css"/>
+     <link href="http://steeze.pl/wp-content/themes/mrtailor/css/owl.theme.css?ver=1.3.1" id="mr_tailor-owl-theme-css" media="all" rel="stylesheet" type="text/css"/>
+     <link href="http://steeze.pl/wp-content/themes/mrtailor/css/offcanvas.css?ver=1.0" id="mr_tailor-offcanvas-css" media="all" rel="stylesheet" type="text/css"/>
+     <link href="http://steeze.pl/wp-content/themes/mrtailor/css/nanoscroller.css?ver=0.7.6" id="mr_tailor-nanoscroller-css" media="all" rel="stylesheet" type="text/css"/>
+     <link href="http://steeze.pl/wp-content/themes/mrtailor/css/select2.css?ver=3.5.1" id="mr_tailor-select2-css" media="all" rel="stylesheet" type="text/css"/>
+     <link href="http://steeze.pl/wp-content/themes/mrtailor/css/defaults.css?ver=1.0" id="mr_tailor-defaults-css" media="all" rel="stylesheet" type="text/css"/>
+     <link href="http://steeze.pl/wp-content/themes/mrtailor/css/styles.css?ver=1.0" id="mr_tailor-styles-css" media="all" rel="stylesheet" type="text/css"/>
+     <link href="http://steeze.pl/wp-content/themes/mrtailor/css/responsive.css?ver=1.0" id="mr_tailor-responsive-css" media="all" rel="stylesheet" type="text/css"/>
+     <link href="http://steeze.pl/wp-content/themes/mrtailor/inc/fonts/getbowtied-fonts/style.css?ver=1.0" id="mr_tailor-fonts-css" media="all" rel="stylesheet" type="text/css"/>
+     <link href="http://steeze.pl/wp-content/themes/mrtailor/inc/fonts/font-awesome/css/font-awesome.min.css?ver=1.0" id="mr_tailor-font-awesome-css" media="all" rel="stylesheet" type="text/css"/>
+     <link href="http://steeze.pl/wp-content/themes/mrtailor/style.css?ver=4.9.6" id="mr_tailor-default-style-css" media="all" rel="stylesheet" type="text/css"/>
+     <script src="http://steeze.pl/wp-includes/js/jquery/jquery.js?ver=1.12.4" type="text/javascript">
+     </script>
+     <script src="http://steeze.pl/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1" type="text/javascript">
+     </script>
+     <script type="text/javascript">
+      /* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"Zobacz koszyk","cart_url":"http:\/\/steeze.pl\/rezerwacje\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+     </script>
+     <script src="http://steeze.pl/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=3.4.1" type="text/javascript">
+     </script>
+     <script src="http://steeze.pl/wp-content/plugins/js_composer/assets/js/vendors/woocommerce-add-to-cart.js?ver=5.4.5" type="text/javascript">
+     </script>
+     <script src="http://steeze.pl/wp-content/themes/mrtailor/js/modernizr.custom.js?ver=2.6.3" type="text/javascript">
+     </script>
+     <link href="http://steeze.pl/wp-json/" rel="https://api.w.org/"/>
+     <link href="http://steeze.pl/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml"/>
+     <link href="http://steeze.pl/wp-includes/wlwmanifest.xml" rel="wlwmanifest" type="application/wlwmanifest+xml"/>
+     <meta content="WordPress 4.9.6" name="generator"/>
+     <meta content="WooCommerce 3.4.1" name="generator"/>
+     <style>
+      p#billing_address_2_field .required{
+	display:none;
+}
+     </style>
+     <style>
+     </style>
+     <script type="text/javascript">
+      var mrtailor_catalogMode = '0';
+     </script>
+     <script type="text/javascript">
+      var mrtailor_ajaxurl = '/wp-admin/admin-ajax.php';
+     </script>
+     <noscript>
+      <style>
+       .woocommerce-product-gallery{ opacity: 1 !important; }
+      </style>
+     </noscript>
+     <style type="text/css">
+      .recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}
+     </style>
+     <meta content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress." name="generator"/>
+     <!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="http://steeze.pl/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]-->
+     <!-- ******************************************************************** -->
+     <!-- * Theme Options Styles ********************************************* -->
+     <!-- ******************************************************************** -->
+     <style>
+      /***************************************************************//* Fonts *******************************************************//***************************************************************//* Base Font */body,.product_meta span a,.product_meta span span,.comments-title,.wishlist_items_number,.shopping_bag_items_number,.copyright_text,.order_details li strong,.wpcf7 input,.mobile-navigation .sub-menu a,.cart-subtotal .amount,.order-total .amount,.wpb_tabs .ui-widget,.wpb_tour .ui-widget,.wpb_accordion .ui-widget,.products ul h3,ul.products h3,.products ul h2,ul.products h2,.widget ul small.count,.country_select.select2-container .select2-selection,.state_select.select2-container .select2-selection,.woocommerce #payment .payment_method_paypal .about_paypal,.woocommerce .form-row.terms .checkbox.check_label,.shortcode_title.main_font,.label,.main-navigation .sub-menu li a,.remember-me,.woocommerce form .form-row label.inline,.woocommerce-page form .form-row label.inline,.nav-next-title,.nav-previous-title,.woocommerce-MyAccount-navigation ul li,.woocommerce td.product-name .wc-item-meta,.woocommerce td.product-name dl.variation{font-family: Nunito, sans-serif;}@media only screen and (min-width: 63.9375em) {.site-content p,.site-content ul,.site-content ol,.site-content dl,table tr td,table thead tr th,table tbody tr td,table tfoot tr th,table tfoot tr td,.woocommerce table.shop_attributes td{font-size:16px;line-height:26px;}body,.woocommerce table.shop_attributes td,.product-name .product-quantity{font-weight: 400;}}/* Headings Font */h1, h2, h3, h4, h5, h6,.product .price,.tabs li a,.blog-list-day,.edit-account legend,.add_to_cart_inline .amount,.categories_grid .category_name,.category_list .category_name,.vc_tta-title-text{font-family: Nunito, sans-serif;}@media only screen and (min-width: 63.9375em) {h1{font-size:50px;}h2, .edit-account legend{font-size:37px;}h3{font-size:27px;}h4,.woocommerce div.product .woocommerce-tabs ul.tabs li a,.woocommerce #content div.product .woocommerce-tabs ul.tabs li a,.woocommerce-page div.product .woocommerce-tabs ul.tabs li a,.woocommerce-page #content div.product .woocommerce-tabs ul.tabs li a,.woocommerce .single_product_summary_upsell h2,.single_product_summary_related .related > h2,.single_product_summary_upsell h2{font-size:23px;}h5{font-size:18px;}h6{font-size:16px;}}@media only screen and (min-width: 63.9375em) {.page-title,.entry-title,.main-slider h2,.lookbook-first-slide-wrapper h2{font-size:65px;}}@media only screen and (min-width: 63.9375em) {.page-title,.entry-title,.main-slider h2,.lookbook-first-slide-wrapper h2{line-height: 85px;}}@media only screen and (min-width: 63.9375em) {.page-title,.entry-title,.product_infos .price,.wpb_tabs_nav li,.add_to_cart_inline .amount,.main-slider h2,.lookbook-first-slide-wrapper h2,.shortcode_banner_simple_height_content h3,.categories_grid .category_name,.category_list .category_name,.shortcode_title{letter-spacing: -0.05em;}}h1, h2, h3, h4, h5, h6,.more-link,.filters_button,.trigger-share-list,.post-navigation,.catalog_top .select2-container .select2-selection,.products a.button,.woocommerce .products a.button,.product_after_shop_loop .price,.woocommerce div.product span.price,.woocommerce-page div.product span.price,.woocommerce #content div.product span.price,.woocommerce-page #content div.product span.price,.woocommerce div.product p.price,.woocommerce-page div.product p.price,.woocommerce #content div.product p.price,.woocommerce-page #content div.product p.price,.woocommerce a.button,.woocommerce-page a.button,.woocommerce button.button,.woocommerce-page button.button,.woocommerce input.button,.woocommerce-page input.button,.woocommerce #respond input#submit,.woocommerce-page #respond input#submit,.woocommerce #content input.button,.woocommerce-page #content input.button,.woocommerce a.button.alt,.woocommerce button.button.alt,.woocommerce input.button.alt,.woocommerce #respond input#submit.alt,.woocommerce #content input.button.alt,.woocommerce-page a.button.alt,.woocommerce-page button.button.alt,.woocommerce-page input.button.alt,.woocommerce-page #respond input#submit.alt,.woocommerce-page #content input.button.alt,.yith-wcwl-add-button,.trigger-share-list,.woocommerce div.product .woocommerce-tabs ul.tabs li a,.woocommerce table.shop_attributes th,.product_meta > span,.woocommerce-page .cart-collaterals .cart_totals table th,.woocommerce-page .cart-collaterals .cart_totals .shipping td:first-child,.woocommerce div.product form.cart .variations label,.woocommerce #content div.product p.stock,.woocommerce-page #content div.product p.stock,.wpb_wrapper .vc_progress_bar .vc_single_bar .vc_label .vc_label_units,.woocommerce-checkout .woocommerce-info,.woocommerce div.product p.price ins,.woocommerce div.product span.price ins,.woocommerce-thankyou-order-details li,dl dt,.edit-account legend,.add_to_cart_inline .amount,.categories_grid .category_name,.category_list .category_name,.vc_tta-title-text{font-weight: 400;}.main-navigation .megamenu-1-col > ul > li > a,.main-navigation .megamenu-2-col > ul > li > a,.main-navigation .megamenu-3-col > ul > li > a,.main-navigation .megamenu-4-col > ul > li > a,#site-navigation > ul > li > a,#site-navigation > ul > li > a strong{font-weight: 900;}/* exceptions: always secondary font */#site-navigation-top-bar,.site-title,.widget h3,.widget_product_search #searchsubmit,.widget_search #searchsubmit,.widget_product_search .search-submit,.widget_search .search-submit,.comment-respond label,.button,button,input[type="button"],input[type="reset"],input[type="submit"],.woocommerce a.button,.woocommerce-page a.button,.woocommerce button.button,.woocommerce-page button.button,.woocommerce input.button,.woocommerce-page input.button,.woocommerce #respond input#submit,.woocommerce-page #respond input#submit,.woocommerce #content input.button,.woocommerce-page #content input.button,.woocommerce a.button.alt,.woocommerce button.button.alt,.woocommerce input.button.alt,.woocommerce #respond input#submit.alt,.woocommerce #content input.button.alt,.woocommerce-page a.button.alt,.woocommerce-page button.button.alt,.woocommerce-page input.button.alt,.woocommerce-page #respond input#submit.alt,.woocommerce-page #content input.button.alt,blockquote cite,.widget .tagcloud a,.widget_shopping_cart .total strong,table thead th,.woocommerce div.product form.cart div.label label,.woocommerce-page div.product form.cart div.label label,.woocommerce #content div.product form.cart div.label label,.woocommerce-page #content div.product form.cart div.label label,.woocommerce span.onsale,.woocommerce-page span.onsale,.recently_viewed_in_single h2,.woocommerce .cart-collaterals .cart_totals table th,.woocommerce-page .cart-collaterals .cart_totals table th,.woocommerce .cart-collaterals .shipping-calculator-button,.woocommerce-page .cart-collaterals .shipping-calculator-button,.woocommerce form .form-row label,.woocommerce-page form .form-row label,.main-slider h1,.site-tools,.post-edit-link,.comment-edit-link,.comment-reply-link,.slider_button,.go_home,.filters_button,.woocommerce-ordering,.out_of_stock_badge_loop,.out_of_stock_badge_single,.add_to_wishlist,.out-of-stock,.wishlist-in-stock,.wishlist-out-of-stock,.cross-sells h2,tr.shipping > td:first-of-type,.checkout_login .woocommerce-info,.checkout_coupon .woocommerce-info,.check_label_radio,.order_details .title,.order_details li,.customer_details dt,.account_view_link,.order_details_footer tr td:first-of-type,.wpcf7,.mobile-navigation,.widget_layered_nav ul li.chosen,.widget_layered_nav_filters ul li.chosen a,.product_meta > span,.woocommerce table.shop_attributes th,.woocommerce-page table.shop_attributes th,.wpb_tour.wpb_content_element .wpb_tabs_nav li a,.mobile-menu-text,.trigger-share-list,.shortcode_banner_simple_height_bullet span,.select2-container .select2-selection,select.topbar-language-switcher,select.wcml_currency_switcher,.blog-isotope .more-link,.blog-isotope .post_meta_archive,.product_after_shop_loop .price,.products a.button,.yith-wcwl-wishlistaddedbrowse a,.yith-wcwl-wishlistexistsbrowse a,.woocommerce-message a,.shop_table.order_details tfoot th:first-child,.shop_table.order_details tfoot td:first-child,.shop_table.woocommerce-checkout-review-order-table tfoot th:first-child,.shop_table.woocommerce-checkout-review-order-table tfoot td:first-child,.woocommerce .shop_table.customer_details tbody tr th,.woocommerce table.shop_table_responsive.customer_details tr td:before,.woocommerce-page table.shop_table_responsive.customer_details tr td:before,.woocommerce .cart-collaterals .cart-subtotal .amount,.woocommerce .cart-collaterals .shipping,.woocommerce .cart-collaterals .cart-subtotal,.shortcode_title.secondary_font,.post_header_date,.post_footer_date,.blog-list-date,.comment-metadata,.more-link,.main-navigation .megamenu-1-col > ul > li > a,.main-navigation .megamenu-2-col > ul > li > a,.main-navigation .megamenu-3-col > ul > li > a,.main-navigation .megamenu-4-col > ul > li > a,#site-navigation > ul > li > a,#mobile-main-navigation ul li,.vc_btn,.nav-previous a,.nav-next a{font-family: Nunito, sans-serif		}/***************************************************************//* Body (.st-content) ******************************************//***************************************************************/.st-content {background-color:#ffffff;}.slide-from-left.filters,.woocommerce .widget_price_filter .ui-slider .ui-slider-handle,.woocommerce-page .widget_price_filter .ui-slider .ui-slider-handle{background:#ffffff;}/***************************************************************//* Body Text Color  *******************************************//***************************************************************/body,pre,label,blockquote,blockquote p,blockquote cite,abbr,acronym,table tr td,.woocommerce .recently_viewed_in_single h2,.product-nav-previous a,.product-nav-next a,#shipping_method .check_label_radio,.cart-collaterals table tr th,.woocommerce-checkout .woocommerce-info:before,.woocommerce-checkout .woocommerce-info,.payment_methods .check_label_radio,.order_details.bacs_details li strong,.thank_you_header .order_details li strong,.woocommerce-thankyou-order-details li,.woocommerce #content div.product p.stock.in-stock,.woocommerce div.product p.stock.in-stock,.woocommerce-page #content div.product p.stock.in-stock,.woocommerce-page div.product p.stock.in-stock,.wpb_widgetised_column a,.quantity input.qty,.woocommerce .quantity .qty,.shop_table.order_details tfoot th:first-child,.shop_table.order_details tfoot td:first-child,.shop_table.woocommerce-checkout-review-order-table tfoot th:first-child,.shop_table.woocommerce-checkout-review-order-table tfoot td:first-child,.woocommerce .shop_table.customer_details tbody tr th,.woocommerce-checkout-payment .woocommerce-terms-and-conditions p,.woocommerce p.return-to-shop a,label span{color: #4d4d4d;}.woocommerce a.remove{color: #4d4d4d !important;}.product_after_shop_loop .price,.woocommerce #content div.product p.price del,.woocommerce #content div.product span.price del,.woocommerce div.product p.price del,.woocommerce div.product span.price del,.woocommerce-page #content div.product p.price del,.woocommerce-page #content div.product span.price del,.woocommerce-page div.product p.price del,.woocommerce-page div.product span.price del{color: rgba(77,77,77,0.80);}a:hover, a:focus,.woocommerce .woocommerce-breadcrumb a:hover,.woocommerce-page .woocommerce-breadcrumb a:hover,.nav-previous-title,.nav-next-title,.woocommerce #content div.product .woocommerce-tabs ul.tabs li a:hover,.woocommerce div.product .woocommerce-tabs ul.tabs li a:hover,.woocommerce-page #content div.product .woocommerce-tabs ul.tabs li a:hover,.woocommerce-page div.product .woocommerce-tabs ul.tabs li a:hover,.woocommerce table.shop_table th,.woocommerce-page table.shop_table th,.woocommerce-page #payment div.payment_box,.woocommerce-checkout .order_details.bacs_details li,.woocommerce-thankyou-order-details li,.thank_you_header .order_details li,.customer_details dt,.wpb_widgetised_column,.wpb_widgetised_column .product_list_widget .star-rating span:before,.wpb_widgetised_column .widget_layered_nav ul li small.count,.post_header_date a:hover,.post_footer_date a:hover,.comment-metadata,.post_meta_archive a:hover,.products li:hover .add_to_wishlist:before,.product_after_shop_loop .price del,.wc-layered-nav-rating a,.woocommerce p.return-to-shop a:hover,.woocommerce table.my_account_orders .woocommerce-orders-table__cell-order-actions .button:hover,.wcppec-checkout-buttons__separator,.woocommerce-MyAccount-content .woocommerce-pagination .woocommerce-button:hover{color: rgba(77,77,77,0.55);}.widget.widget_price_filter .price_slider_amount .button:hover,.woocommerce a.remove:hover{color: rgba(77,77,77,0.55) !important;}.required,.woocommerce form .form-row .required,.wp-caption-text,.woocommerce .woocommerce-breadcrumb,.woocommerce-page .woocommerce-breadcrumb,.woocommerce .woocommerce-result-count,.woocommerce-page .woocommerce-result-count.woocommerce div.product .woocommerce-tabs ul.tabs li a,.woocommerce #content div.product .woocommerce-tabs ul.tabs li a,.woocommerce-page div.product .woocommerce-tabs ul.tabs li a,.woocommerce-page #content div.product .woocommerce-tabs ul.tabs li a,.product_list_widget .wishlist-out-of-stock,.woocommerce #reviews #comments ol.commentlist li .comment-text .verified,.woocommerce-page #reviews #comments ol.commentlist li .comment-text .verified,.woocommerce #content div.product p.stock.out-of-stock,.woocommerce div.product p.stock.out-of-stock,.woocommerce-page #content div.product p.stock.out-of-stock,.woocommerce-page div.product p.stock.out-of-stock,.yith-wcwl-add-button:before,.post_header_date a,.post_footer_date a,.comment-metadata,.post_meta_archive a{color: rgba(77,77,77,0.45);}.products a.button:hover{color: rgba(77,77,77,0.45) !important;}.products .add_to_wishlist:before{color: rgba(77,77,77,0.40);}.woocommerce .star-rating:before,.woocommerce-page .star-rating:before,.woocommerce p.stars,.woocommerce-page p.stars{color: rgba(77,77,77,0.35);}pre{border-color: rgba(77,77,77,0.15);}hr,.woocommerce div.product .woocommerce-tabs ul.tabs li,.woocommerce #content div.product .woocommerce-tabs ul.tabs li,.woocommerce-page div.product .woocommerce-tabs ul.tabs li,.woocommerce-page #content div.product .woocommerce-tabs ul.tabs li,.wpb_widgetised_column .tagcloud a{border-color: rgba(77,77,77,0.13);}.woocommerce table.shop_table tbody th,.woocommerce table.shop_table tbody td,.woocommerce table.shop_table tbody tr:first-child td,.woocommerce table.shop_table tfoot th,.woocommerce table.shop_table tfoot td,.woocommerce .shop_table.customer_details tbody tr:first-child th,.woocommerce .cart-collaterals .cart_totals tr.order-total td,.woocommerce .cart-collaterals .cart_totals tr.order-total th,.woocommerce-page .cart-collaterals .cart_totals tr.order-total td,.woocommerce-page .cart-collaterals .cart_totals tr.order-total th,.woocommerce .my_account_container table.shop_table.order_details tr:first-child td,.woocommerce-page .my_account_container table.shop_table.order_details tr:first-child td,.woocommerce .my_account_container table.shop_table order_details_footer tr:last-child td,.woocommerce-page .my_account_container table.shop_table.order_details_footer tr:last-child td,.blog-isotop-master-wrapper #nav-below.paging-navigation,.payment_methods li:first-child{border-top-color: rgba(77,77,77,0.13);}abbr,acronym{border-bottom-color: rgba(77,77,77,1);}table tr,.woocommerce .my_account_container table.shop_table.order_details tr:last-child td,.woocommerce-page .my_account_container table.shop_table.order_details tr:last-child td,.payment_methods li,.slide-from-left.filters aside,.quantity input.qty,.woocommerce .quantity .qty,.woocommerce .shop_table.customer_details tbody tr:last-child th,.woocommerce .shop_table.customer_details tbody tr:last-child td{border-bottom-color: rgba(77,77,77,0.13);}.woocommerce .widget_price_filter .ui-slider .ui-slider-range,.woocommerce-page .widget_price_filter .ui-slider .ui-slider-range{background: rgba(77,77,77,0.35);}.woocommerce-checkout .thank_you_bank_details h3:after,.woocommerce .widget_price_filter .price_slider_wrapper .ui-widget-content,.woocommerce-page .widget_price_filter .price_slider_wrapper .ui-widget-content,.blog-isotope:before,.blog-isotope:after{background: rgba(77,77,77,0.13);}pre{background: rgba(77,77,77,0.05);}.comments_section,.cart-buttons,.woocommerce .cart-collaterals,.woocommerce-page .cart-collaterals,.single_product_summary_upsell,.single_product_summary_related,.shop_table.order_details tfoot,.shop_table.woocommerce-checkout-review-order-table tfoot{background: rgba(77,77,77,0.04);}/* min-width 641px, medium screens */@media only screen and (min-width: 40.063em) {.woocommerce #content nav.woocommerce-pagination ul,.woocommerce nav.woocommerce-pagination ul,.woocommerce-page #content nav.woocommerce-pagination ul,.woocommerce-page nav.woocommerce-pagination ul{border-color: rgba(77,77,77,0.13)  transparent rgba(77,77,77,0.13) rgba(77,77,77,0.13);}.woocommerce #content nav.woocommerce-pagination ul li,.woocommerce nav.woocommerce-pagination ul li,.woocommerce-page #content nav.woocommerce-pagination ul li,.woocommerce-page nav.woocommerce-pagination ul li{border-right-color: rgba(77,77,77,0.13);}.woocommerce div.product .woocommerce-tabs ul.tabs li,.woocommerce #content div.product .woocommerce-tabs ul.tabs li,.woocommerce-page div.product .woocommerce-tabs ul.tabs li,.woocommerce-page #content div.product .woocommerce-tabs ul.tabs li{border-bottom-color:  transparent;}}/***************************************************************//* Headings Color  *********************************************//***************************************************************/h1, h2, h3, h4, h5, h6,table tr th,.woocommerce div.product span.price,.woocommerce-page div.product span.price,.woocommerce #content div.product span.price,.woocommerce-page #content div.product span.price,.woocommerce div.product p.price,.woocommerce-page div.product p.price,.woocommerce #content div.product p.price,.woocommerce-page #content div.product p.price,.woocommerce #content div.product .woocommerce-tabs ul.tabs li.active a,.woocommerce div.product .woocommerce-tabs ul.tabs li.active a,.woocommerce-page #content div.product .woocommerce-tabs ul.tabs li.active a,.woocommerce-page div.product .woocommerce-tabs ul.tabs li.active a,.woocommerce table.shop_table .product-name a,.woocommerce-page table.shop_table .product-name a,ul.products h3 a,.products ul h3 a,ul.products h2 a,.products ul h2 a,.edit-account legend{color: #2d2d2d;}.wpb_widgetised_column .widget-title{color: #2d2d2d !important;}ul.products h3 a:hover,.products ul h3 a:hover,ul.products h2 a:hover,.products ul h2 a:hover{color: rgba(45,45,45,0.8);}.woocommerce div.product .woocommerce-tabs ul.tabs li.active,.woocommerce #content div.product .woocommerce-tabs ul.tabs li.active,.woocommerce-page div.product .woocommerce-tabs ul.tabs li.active,.woocommerce-page #content div.product .woocommerce-tabs ul.tabs li.active{border-bottom-color: #2d2d2d;}.woocommerce-checkout .entry-title:after,.woocommerce-account .entry-title:after{background: #2d2d2d;}/***************************************************************//* Main Color  *************************************************//***************************************************************/.widget .tagcloud a:hover,.woocommerce span.onsale,.woocommerce-page span.onsale,.woocommerce nav.woocommerce-pagination ul li span.current,.woocommerce nav.woocommerce-pagination ul li a:hover,.woocommerce nav.woocommerce-pagination ul li a:focus,.woocommerce #content nav.woocommerce-pagination ul li span.current,.woocommerce #content nav.woocommerce-pagination ul li a:hover,.woocommerce #content nav.woocommerce-pagination ul li a:focus,.woocommerce-page nav.woocommerce-pagination ul li span.current,.woocommerce-page nav.woocommerce-pagination ul li a:hover,.woocommerce-page nav.woocommerce-pagination ul li a:focus,.woocommerce-page #content nav.woocommerce-pagination ul li span.current,.woocommerce-page #content nav.woocommerce-pagination ul li a:hover,.woocommerce-page #content nav.woocommerce-pagination ul li a:focus,.woocommerce .widget_layered_nav_filters ul li a,.woocommerce-page .widget_layered_nav_filters ul li a,.woocommerce .widget_layered_nav ul li.chosen a,.woocommerce-page .widget_layered_nav ul li.chosen a,.nl-field ul,.nl-form .nl-submit,.audioplayer-bar-played,.audioplayer-volume-adjust div div,.select2-results .select2-highlighted,.slide-from-right,.with_thumb_icon,/*begin app.css*/.woocommerce-page a.button, .woocommerce-page a.button,.woocommerce-page a.button.alt,.woocommerce-page button.button,.woocommerce-page button.button,.woocommerce-page button.button.alt,.woocommerce-page #content input.woocommerce-Button.button,.woocommerce-page #respond input#submit,.woocommerce-page #respond input#submit,.woocommerce-page #content #respond input#submit,.woocommerce-page #respond #content input#submit,.woocommerce-page a.button.alt,.woocommerce-page a.alt.button,.woocommerce-page button.button.alt,.woocommerce-page button.alt.button,.woocommerce-page #respond input.alt#submit,.woocommerce-page #content input.alt.button,ul.pagination li.current a,ul.pagination li.current a:hover, ul.pagination li.current a:focus,.progress .meter,.sub-nav dt.active a,.sub-nav dd.active a,.sub-nav li.active a,.top-bar-section ul li > a.button, .top-bar-section ul .woocommerce-page li > a.button, .woocommerce-page .top-bar-section ul li > a.button,.top-bar-section ul .woocommerce-page li > a.button.alt,.woocommerce-page .top-bar-section ul li > a.button.alt,.top-bar-section ul li.active > a,.no-js .top-bar-section ul li:active > a,.woocommerce-edit-address #content .woocommerce input.button/*end app.css*/{background: #2d2d2d;}.blog_list_img{background-color: #2d2d2d;}.select2-container,.big-select,select.big-select,.select2-dropdown-open.select2-drop-above .select2-choice,.select2-dropdown-open.select2-drop-above .select2-choices,.select2-container .select2-selection,.yith-wcwl-add-button,.yith-wcwl-wishlistaddedbrowse .feedback,.yith-wcwl-wishlistexistsbrowse .feedback,.shopping_bag_items_number,.wishlist_items_number,.woocommerce .star-rating span:before,.woocommerce-page .star-rating span:before,/*begin app.css*/.woocommerce .woocommerce-breadcrumb a,.woocommerce-page .woocommerce-breadcrumb a,.panel.callout a,.side-nav li a,.has-tip:hover, .has-tip:focus,a,.edit-link,.comment-reply,.comment-edit-link,.woocommerce p.stars a.active:after,.woocommerce p.stars a:hover:after,.woocommerce-page p.stars a.active:after,.woocommerce-page p.stars a:hover:after,.yith-wcwl-wishlistaddedbrowse,.yith-wcwl-wishlistexistsbrowse,.woocommerce-ordering:before,.woocommerce-page #content .actions .coupon input.button,.woocommerce-page #content .actions .coupon input.button.alt,.woocommerce-page #content .actions > input.button,.woocommerce-page #content .actions > input.button.alt,.woocommerce table.my_account_orders .button/*end app.css*/{color: #2d2d2d;}.select2-container--default .select2-selection--single .select2-selection__placeholder{color: #2d2d2d !important;}.products a.button,.cart-buttons .update_and_checkout .update_cart,.cart-buttons .coupon .apply_coupon,.widget.widget_price_filter .price_slider_amount .button,#wishlist-offcanvas .button,#wishlist-offcanvas input[type="button"],#wishlist-offcanvas input[type="reset"],#wishlist-offcanvas input[type="submit"],/*begin app.css*/.tooltip.opened/*end app.css*/{color: #2d2d2d !important;}.shortcode_products_slider .products a.button:hover{color: rgba(45,45,45,0.8) !important;}/*begin app.css*/.label,button,.button,.woocommerce-page a.button, .woocommerce-page a.button,.woocommerce-page a.button.alt,.woocommerce-page .woocommerce a.button,.woocommerce .woocommerce-page a.button,.woocommerce-page .woocommerce a.button.alt,.woocommerce .woocommerce-page a.button.alt,.woocommerce-page button.button,.woocommerce-page button.button,.woocommerce-page button.button.alt,.woocommerce-page .woocommerce button.button,.woocommerce .woocommerce-page button.button,.woocommerce-page .woocommerce button.button.alt,.woocommerce .woocommerce-page button.button.alt,.woocommerce-page #respond input#submit,.woocommerce-page .woocommerce #respond input#submit,.woocommerce #respond .woocommerce-page input#submit,.woocommerce-page #respond input#submit,.woocommerce-page #content #respond input#submit,.woocommerce-page #respond #content input#submit,.woocommerce-page #content .woocommerce #respond input#submit,.woocommerce #respond .woocommerce-page #content input#submit,.woocommerce-page a.button.alt,.woocommerce-page a.alt.button,.woocommerce-page .woocommerce a.alt.button,.woocommerce .woocommerce-page a.alt.button,.woocommerce-page button.button.alt,.woocommerce-page button.alt.button,.woocommerce-page .woocommerce button.alt.button,.woocommerce .woocommerce-page button.alt.button,.woocommerce-page input.alt.button,.woocommerce-page #respond input.alt#submit,.woocommerce-page #content input.alt.button,.woocommerce-page .woocommerce input.alt.button,.woocommerce .woocommerce-page input.alt.button,.woocommerce-page .woocommerce #respond input.alt#submit,.woocommerce #respond .woocommerce-page input.alt#submit,.woocommerce-page .woocommerce #content input.alt.button,.woocommerce #content .woocommerce-page input.alt.button,.woocommerce a.button,.woocommerce .woocommerce-page a.button,.woocommerce-page .woocommerce a.button,.woocommerce .woocommerce-page a.button.alt,.woocommerce-page .woocommerce a.button.alt,.woocommerce a.button,.woocommerce a.button.alt,.woocommerce button.button,.woocommerce .woocommerce-page button.button,.woocommerce-page .woocommerce button.button,.woocommerce .woocommerce-page button.button.alt,.woocommerce-page .woocommerce button.button.alt,.woocommerce button.button,.woocommerce button.button.alt,.woocommerce input.button,.woocommerce .woocommerce-page #respond input#submit,.woocommerce-page #respond .woocommerce input#submit,.woocommerce #respond input#submit,.woocommerce #respond input#submit,.woocommerce #content .woocommerce-page #respond input#submit,.woocommerce-page #respond .woocommerce #content input#submit,.woocommerce #content input.button,.woocommerce #content #respond input#submit,.woocommerce #respond #content input#submit,.woocommerce a.button.alt,.woocommerce .woocommerce-page a.alt.button,.woocommerce-page .woocommerce a.alt.button,.woocommerce a.alt.button,.woocommerce button.button.alt,.woocommerce .woocommerce-page button.alt.button,.woocommerce-page .woocommerce button.alt.button,.woocommerce button.alt.button,.woocommerce .woocommerce-page input.alt.button,.woocommerce-page .woocommerce input.alt.button,.woocommerce .woocommerce-page #respond input.alt#submit,.woocommerce-page #respond .woocommerce input.alt#submit,.woocommerce .woocommerce-page #content input.alt.button,.woocommerce-page #content .woocommerce input.alt.button,.woocommerce input.alt.button,.woocommerce #respond input.alt#submit,.woocommerce #content input.alt.button,input[type="button"],input[type="reset"],input[type="submit"],.alert-box,.woocommerce .quantity .plus,.woocommerce .quantity .minus,.woocommerce-page .quantity .plus,.woocommerce-page .quantity .minus,.woocommerce-page #content .quantity .plus,.woocommerce-page #content .quantity .minus,.woocommerce-page #content input.button[type="submit"],.woocommerce-page #content input.button[type="submit"]/*end app.css*/{background-color: #2d2d2d;}.main-navigation ul ul li a:hover,.box-share-link:hover span{border-bottom-color: #2d2d2d;}.login_header{border-top-color: #2d2d2d;}.cart-buttons .update_and_checkout .update_cart,.cart-buttons .coupon .apply_coupon,.shopping_bag_items_number,.wishlist_items_number,.widget .tagcloud a:hover,.woocommerce .widget_price_filter .ui-slider .ui-slider-handle,.woocommerce-page .widget_price_filter .ui-slider .ui-slider-handle,.woocommerce-page #content .actions .coupon input.button,.woocommerce-page #content .actions .coupon input.button.alt,.woocommerce-page #content .actions > input.button,.woocommerce-page #content .actions > input.button.alt{border-color: #2d2d2d;}.cart-buttons .update_and_checkout .update_cart,.cart-buttons .coupon .apply_coupon{border-color: #2d2d2d !important;}/***************************************************************//* Top Bar *****************************************************//***************************************************************/#site-top-bar,#site-navigation-top-bar .sf-menu ul{background: #0a0a0a;}#site-top-bar,#site-top-bar a{color:#ffffff;}/***************************************************************//* 	Header *****************************************************//***************************************************************/.site-branding {height:auto;border:0;padding:0;}.site-branding img {height:39px;width:auto;}@media only screen and (min-width: 40.063em) {.site-branding{padding:7.5px 0;}#site-navigation{line-height: 54px;}}/*.site-tools {top:px;}*/.site-header {padding:20px 0;}.site-header,.site-header-sticky,#site-navigation,.shortcode_banner_simple_height_bullet span{font-size: 13px;}.site-header,.site-header-sticky,.shopping_bag_items_number,.wishlist_items_number,.site-tools.site_tools_sticky{background: #4a5e7a;}.site-header,#site-navigation a,.site-header-sticky,.site-header-sticky a,.site-tools ul li a,.shopping_bag_items_number,.wishlist_items_number,.site-title a,.widget_product_search .search-but-added,.widget_search .search-but-added{color:#ffffff;}.shopping_bag_items_number,.wishlist_items_number,.site-branding{border-color: #ffffff;}/***************************************************************//* Transparent Header ******************************************//***************************************************************//***************************************************************//* /Transparent Header *****************************************//***************************************************************//***************************************************************//* Custom Menu Colors ******************************************//***************************************************************/.main-navigation ul ul,.main-navigation ul ul ul,.main-navigation ul ul ul ul,.main-navigation ul ul ul ul ul{background: #ffffff;}.main-navigation ul ul li a {color: #2d2d2d !important;}.main-navigation ul ul li a:hover, .box-share-link:hover span {border-bottom-color: #2d2d2d;}/***************************************************************//* /Custom Menu Colors *****************************************//***************************************************************//***************************************************************//* Footer ******************************************************//***************************************************************/#site-footer{background: #2d3e50;}#site-footer,#site-footer .widget-title,#site-footer a:hover,#site-footer .star-rating span:before,#site-footer .star-rating span:before{color:#ffffff;}#site-footer a{color:#ffffff;}/***************************************************************//* Breadcrumbs *************************************************//***************************************************************//***************************************************************//* Slider ******************************************************//***************************************************************//********************************************************************//* Catalog Mode *****************************************************//********************************************************************//********************************************************************//* Custom CSS *******************************************************//********************************************************************/.whitefont{color:#fff;}.vc_tta-title-text {font-size: 16px;}.post .entry-thumbnail img {width: 60%;}.medium-4 .woocommerce-ordering {display: none;}.wpb-js-composer .vc_tta-color-grey.vc_tta-style-outline .vc_tta-tab>a:focus,.wpb-js-composer .vc_tta-color-grey.vc_tta-style-outline .vc_tta-tab>a:hover,.wpb-js-composer .vc_tta.vc_general .vc_tta-tab.vc_active>a:hover,.wpb-js-composer .vc_tta-color-grey.vc_tta-style-outline .vc_tta-tab.vc_active>a{background:#f63c01!important;color:#fff!important;}.wpb-js-composer .vc_tta-color-grey.vc_tta-style-outline .vc_tta-tab>a{color:#666!important;}.page-id-40 .swiper-pagination-bullets,.page-id-40 .arrow-left,.page-id-40 .arrow-right,.page-id-13 .swiper-pagination-bullets,.page-id-13 .arrow-left,.page-id-13 .arrow-right,.page-id-76 .swiper-pagination-bullets,.page-id-76 .arrow-left,.page-id-76 .arrow-right,.page-id-54 .swiper-pagination-bullets,.page-id-54 .arrow-left,.page-id-54 .arrow-right,.page-id-45 .swiper-pagination-bullets,.page-id-45 .arrow-left,.page-id-45 .arrow-right{display:none;}.rodo-overlay{background: #fff;background:rgba(255,255,255,0.7);width:100%;height:100%;text-align:center;position:fixed;vertical-align:middle;top:0;left:0;z-index:999999;display:none;overflow-y: scroll;}.rodo-box{max-width: 650px;margin: 50px 20px 20px 20px;padding: 20px;position: relative;display: inline-block;background: #fff;color:#4d4d4d;border: 1px solid #e3e3e3;text-align:left;}.rodo-box p{margin-bottom:10px;}.rodo-box a{text-decoration:underline;}.rodo-box #accept-button,.rodo-box #later-button{text-decoration:none;display:inline-block;padding:10px 15px;margin-left:10px;margin-top:30px;color:#fff;background:#2d2d2d;}.rodo-box #accept-button{background: #184e8d;float:right;}.woocommerce form .form-row label.checkbox, .woocommerce-page form .form-row label.checkbox, .wpcf7-form .zgody-label{text-transform:none;}span.wpcf7-list-item{margin-left:0;}
+     </style>
+     <script>
+      //alert("Base Font: Nunito, sans-serif, Secondary Font: Nunito, sans-serif");
+     </script>
+     <style id="wp-custom-css" type="text/css">
+      .woocommerce-breadcrumb {
+	color: #f93a00;
+}
+
+.wpb-js-composer .vc_tta-color-grey.vc_tta-style-modern.vc_tta-tabs .vc_tta-panels {
+	background-color: #999999!important;
+}
+     </style>
+     <noscript>
+      <style type="text/css">
+       .wpb_animate_when_almost_visible { opacity: 1; }
+      </style>
+     </noscript>
+     <!-- START - Open Graph for Facebook, Google+ and Twitter Card Tags 2.2.4.2 -->
+     <!-- Facebook Open Graph -->
+     <meta content="pl_PL" property="og:locale"/>
+     <meta content="STEEZE.PL" property="og:site_name"/>
+     <meta content="STEEZE.PL" property="og:title"/>
+     <meta content="http://steeze.pl/wyjazdy/" property="og:url"/>
+     <meta content="article" property="og:type"/>
+     <meta content="wyjazdy sportowe, aktywne wakacje, wake camp, kite, snowboard" property="og:description"/>
+     <!-- Google+ / Schema.org -->
+     <meta content="STEEZE.PL" itemprop="name"/>
+     <meta content="STEEZE.PL" itemprop="headline"/>
+     <meta content="wyjazdy sportowe, aktywne wakacje, wake camp, kite, snowboard" itemprop="description"/>
+     <!--<meta itemprop="publisher" content="STEEZE.PL"/>-->
+     <!-- To solve: The attribute publisher.itemtype has an invalid value -->
+     <!-- Twitter Cards -->
+     <meta content="STEEZE.PL" name="twitter:title"/>
+     <meta content="http://steeze.pl/wyjazdy/" name="twitter:url"/>
+     <meta content="wyjazdy sportowe, aktywne wakacje, wake camp, kite, snowboard" name="twitter:description"/>
+     <meta content="summary_large_image" name="twitter:card"/>
+     <!-- SEO -->
+     <!-- Misc. tags -->
+     <!-- is_archive -->
+     <!-- END - Open Graph for Facebook, Google+ and Twitter Card Tags 2.2.4.2 -->
+     <!-- Facebook Pixel Code -->
+     <script>
+      !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1468544770074356');
+  fbq('track', 'PageView');
+     </script>
+     <noscript>
+      <img height="1" src="https://www.facebook.com/tr?id=1468544770074356&amp;ev=PageView&amp;noscript=1" style="display:none" width="1"/>
+     </noscript>
+     <!-- End Facebook Pixel Code -->
+    </link>
+   </link>
+  </meta>
+ </head>
+ <body class="archive post-type-archive post-type-archive-product woocommerce woocommerce-page woocommerce-no-js wpb-js-composer js-comp-ver-5.4.5 vc_responsive">
+  <div class="rodo-overlay">
+   <div class="rodo-box">
+    <h2>
+     USTAWIENIA PLIKÓW COOKIE
+    </h2>
+    <p>
+     Z dniem 25 maja 2018 r. dostosowujemy naszą działalność do nowego Rozporządzenia Unii Europejskiej o Ochronie Danych Osobowych (RODO). Zaktualizowaliśmy naszą
+     <a href="https://wakecamp.pl/polityka-prywatnosci/" target="_blank">
+      politykę prywatności
+     </a>
+     , aby udzielić Ci bardziej szczegółowych informacji o tym, w jaki sposób Steeze Travel chroni Twoją prywatność, a także o tym, w jaki sposób możesz korzystać ze swoich praw do swoich danych. Wiedz, że Twoje dane są u nas bezpieczne.
+    </p>
+    <p>
+     Steeze Travel prosi o zaakceptowanie plików cookie związanych z działaniem sklepu. Więcej informacji o plikach cookie i przetwarzaniu danych osobowych można znaleźć w
+     <a href="https://wakecamp.pl/polityka-prywatnosci/" target="_blank">
+      Polityce ochrony prywatności
+     </a>
+     w dziale z zasadami dotyczącymi plików cookie.
+    </p>
+    <p>
+     Czy akceptujesz te pliki cookie i związane z nimi przetwarzanie danych osobowych?
+    </p>
+    <p>
+     <a href="#" id="later-button">
+      później
+     </a>
+     <a href="#" id="accept-button">
+      AKCEPTUJE
+     </a>
+    </p>
+   </div>
+  </div>
+  <div class="st-container" id="st-container">
+   <div class="st-pusher">
+    <div class="st-pusher-after">
+    </div>
+    <div class="st-content">
+     <div class="normal_header " id="page">
+      <div class="top-headers-wrapper">
+       <div id="site-top-bar">
+        <div class="row">
+         <div class="large-5 columns">
+          <div class="language-and-currency">
+          </div>
+          <!--.language-and-currency-->
+          <div class="site-top-message">
+           KONTAKT: +48 510 233 806
+          </div>
+         </div>
+         <!-- .large-6 .columns -->
+         <div class="large-7 columns">
+          <div class="site-social-icons-wrapper">
+           <div class="site-social-icons">
+            <ul class="//animated //flipY">
+             <li class="site-social-icons-facebook">
+              <a href="https://www.facebook.com/Steezepl/" target="_blank">
+               <i class="fa fa-facebook">
+               </i>
+               <span>
+                Facebook
+               </span>
+              </a>
+             </li>
+             <li class="site-social-icons-instagram">
+              <a href="https://www.instagram.com/steezetravel/" target="_blank">
+               <i class="fa fa-instagram">
+               </i>
+               <span>
+                Instagram
+               </span>
+              </a>
+             </li>
+             <li class="site-social-icons-youtube">
+              <a href="https://www.youtube.com/channel/UCfifA9sX4vRZIHLmq8GzAwA" target="_blank">
+               <i class="fa fa-youtube-play">
+               </i>
+               <span>
+                Youtube
+               </span>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <nav class="main-navigation" id="site-navigation-top-bar" role="navigation">
+          </nav>
+          <!-- #site-navigation -->
+         </div>
+         <!-- .large-8 .columns -->
+        </div>
+        <!-- .row -->
+       </div>
+       <!-- #site-top-bar -->
+       <header class="site-header header-default" id="masthead" role="banner">
+        <div class="row">
+         <div class="large-12 columns">
+          <div class="site-header-wrapper">
+           <div class="site-branding">
+            <a href="http://steeze.pl/" rel="home">
+             <img alt="STEEZE.PL" class="site-logo" src="http://steeze.pl/wp-content/uploads/2018/09/41294800_2161651574101720_8767112382485889024_n.png" title="wyjazdy sportowe, aktywne wakacje, wake camp, kite, snowboard"/>
+            </a>
+           </div>
+           <!-- .site-branding -->
+           <div id="site-menu">
+            <nav class="main-navigation" id="site-navigation" role="navigation">
+             <ul id="menu-mainmenu">
+              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children" id="mrtailor-menu-item-8">
+               <a href="/kategoria-produktu/wyjazdy">
+                <strong>
+                 Wyjazdy
+                </strong>
+               </a>
+               <ul class="sub-menu level-0">
+                <li class="menu-item menu-item-type-custom menu-item-object-custom" id="mrtailor-menu-item-528">
+                 <a href="http://steeze.pl/kategoria-produktu/wyjazdy/">
+                  Winter Starter Val Thorens 07-16.12.18
+                 </a>
+                </li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom" id="mrtailor-menu-item-529">
+                 <a href="http://steeze.pl/produkt/powder-camp-gudauri-1-10-12-01-19/">
+                  Powder Camp Gudauri #1 10-18.01.19
+                 </a>
+                </li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom" id="mrtailor-menu-item-548">
+                 <a href="http://steeze.pl/produkt/family-camp-1-26-01-02-02-19/#1536663841546-03069a27-d136">
+                  Family Camp #1 26.01-02.02.19
+                 </a>
+                </li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom" id="mrtailor-menu-item-575">
+                 <a href="http://steeze.pl/produkt/snow-kids-ferie-zimowe-niederau-26-01-02-02-19/">
+                  Snow Kids ferie zimowe Niederau 26.01-02.02.19
+                 </a>
+                </li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom" id="mrtailor-menu-item-530">
+                 <a href="http://steeze.pl/produkt/snow-kids-ferie-zimowe-02-09-02-19/">
+                  Snow Kids ferie zimowe 02-09.02.19
+                 </a>
+                </li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom" id="mrtailor-menu-item-532">
+                 <a href="http://steeze.pl/produkt/kurs-lawinowy-1-15-17-02-19/">
+                  Kurs lawinowy #1 15-17.02.19
+                 </a>
+                </li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom" id="mrtailor-menu-item-534">
+                 <a href="http://steeze.pl/produkt/kurs-lawinowy-2-01-03-03-19/">
+                  Kurs lawinowy #2 01-03.03.19
+                 </a>
+                </li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom" id="mrtailor-menu-item-535">
+                 <a href="http://steeze.pl/produkt/powder-camp-gudauri-2-07-15-03-19/">
+                  Powder Camp Gudauri #2 07-15.03.19
+                 </a>
+                </li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom" id="mrtailor-menu-item-536">
+                 <a href="http://steeze.pl/produkt/winter-break-chamrousse-08-17-03-19/">
+                  Winter Break Chamrousse 08-17.03.19
+                 </a>
+                </li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom" id="mrtailor-menu-item-537">
+                 <a href="http://steeze.pl/produkt/snow-week_les2alpes-15-24-03-19/">
+                  Snow Week Les2Alpes 15-24.03.19
+                 </a>
+                </li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom" id="mrtailor-menu-item-551">
+                 <a href="http://steeze.pl/produkt/family-camp-2-niederau-16-23-03-19/">
+                  Family Camp #2 Niederau 16-23.03.19
+                 </a>
+                </li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom" id="mrtailor-menu-item-527">
+                 <a href="http://steeze.pl/produkt/hello-swiss-verbier-22-31-03-19/">
+                  Hello Swiss Verbier 22-31.03.19
+                 </a>
+                </li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom" id="mrtailor-menu-item-539">
+                 <a href="http://steeze.pl/produkt/chill-week-vars-29-03-07-04-19/">
+                  Chill Week Vars 29.03 – 07.04.19
+                 </a>
+                </li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom" id="mrtailor-menu-item-546">
+                 <a href="http://steeze.pl/produkt/im-going-to-livigno-05-19-04-19/">
+                  I’m going to Livigno 05-19.04.19
+                 </a>
+                </li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom" id="mrtailor-menu-item-368">
+                 <a href="http://steeze.pl/produkt/sardynia-kitejoga/">
+                  Sardynia Kite&amp;Joga 15-30.09.18
+                 </a>
+                </li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom" id="mrtailor-menu-item-388">
+                 <a href="http://steeze.pl/produkt/turcja-hip-notics-24-31-10-2018/">
+                  Turcja Hip-Notics 24-31.10.2018
+                 </a>
+                </li>
+               </ul>
+              </li>
+              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children" id="mrtailor-menu-item-44">
+               <a href="#">
+                <strong>
+                 Poznaj Nas
+                </strong>
+               </a>
+               <ul class="sub-menu level-0">
+                <li class="menu-item menu-item-type-post_type menu-item-object-page" id="mrtailor-menu-item-42">
+                 <a href="http://steeze.pl/o-steeze/">
+                  O Steeze
+                 </a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page" id="mrtailor-menu-item-15">
+                 <a href="http://steeze.pl/dlaczego-my/">
+                  Dlaczego My
+                 </a>
+                </li>
+               </ul>
+              </li>
+              <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children" id="mrtailor-menu-item-52">
+               <a href="#">
+                <strong>
+                 Co robimy
+                </strong>
+               </a>
+               <ul class="sub-menu level-0">
+                <li class="menu-item menu-item-type-post_type menu-item-object-page" id="mrtailor-menu-item-85">
+                 <a href="http://steeze.pl/snowboard-narty/">
+                  Snowboard &amp; Narty
+                 </a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page" id="mrtailor-menu-item-61">
+                 <a href="http://steeze.pl/wake/">
+                  Wake
+                 </a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page" id="mrtailor-menu-item-53">
+                 <a href="http://steeze.pl/kitesurfing/">
+                  Kitesurfing
+                 </a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page" id="mrtailor-menu-item-70">
+                 <a href="http://steeze.pl/windsurfing/">
+                  Windsurfing kids
+                 </a>
+                </li>
+               </ul>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page" id="mrtailor-menu-item-75">
+               <a href="http://steeze.pl/newsy/">
+                <strong>
+                 Newsy
+                </strong>
+               </a>
+              </li>
+              <li class="menu-item menu-item-type-post_type menu-item-object-page" id="mrtailor-menu-item-80">
+               <a href="http://steeze.pl/kontakt/">
+                <strong>
+                 Kontakt
+                </strong>
+               </a>
+              </li>
+             </ul>
+            </nav>
+            <!-- #site-navigation -->
+            <div class="site-tools">
+             <ul>
+              <li class="mobile-menu-button">
+               <a href="javascript:void(0)">
+                <span class="mobile-menu-text">
+                 MENU
+                </span>
+                <i class="fa fa-bars">
+                </i>
+               </a>
+              </li>
+              <li class="search-button">
+               <a href="javascript:void(0)">
+                <i class="getbowtied-icon-search">
+                </i>
+               </a>
+              </li>
+             </ul>
+            </div>
+            <div class="site-search">
+             <div class="widget woocommerce widget_product_search">
+              <form action="http://steeze.pl/" class="woocommerce-product-search" method="get" role="search">
+               <label class="screen-reader-text" for="woocommerce-product-search-field-0">
+                Szukaj:
+               </label>
+               <input class="search-field" id="woocommerce-product-search-field-0" name="s" placeholder="Szukaj produktów…" type="search" value=""/>
+               <button type="submit" value="Szukaj">
+                Szukaj
+               </button>
+               <input name="post_type" type="hidden" value="product"/>
+              </form>
+             </div>
+            </div>
+            <!-- .site-search -->
+           </div>
+           <!-- #site-menu -->
+           <div class="clearfix">
+           </div>
+          </div>
+          <!-- .site-header-wrapper -->
+         </div>
+         <!-- .columns -->
+        </div>
+        <!-- .row -->
+       </header>
+       <!-- #masthead -->
+      </div>
+      <div class="content-area catalog-page without-sidebar" id="primary">
+       <div "="" class="category_header ">
+        <!-- <div class="category_header_overlay"></div> -->
+        <div class="row">
+         <div class="large-8 large-centered columns">
+          <nav class="woocommerce-breadcrumb">
+           <a href="http://steeze.pl">
+            Strona główna
+           </a>
+           / Wyjazdy
+          </nav>
+          <h1 class="page-title shop_page_title">
+           Wyjazdy
+          </h1>
+         </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="large-12 columns">
+         <div class="site-content" id="content" role="main">
+          <style>
+           .categories_grid { margin-bottom: 0; }
+          </style>
+          <div class="catalog_top row">
+           <div class="medium-8 columns">
+            <div class="filter_products_container">
+             <a class="filters_button" id="button_offcanvas_sidebar_left">
+              Filtruj
+             </a>
+             <span class="woocommerce-result-count">
+              Wyświetlanie wszystkich 16 wyników
+             </span>
+            </div>
+            <!-- .filter_products_container-->
+           </div>
+           <!-- .columns-->
+           <div class="medium-4 columns">
+            <form class="woocommerce-ordering" method="get">
+             <select class="orderby big-select alignright" name="orderby">
+              <option value="popularity">
+               Sortuj wg popularności
+              </option>
+              <option value="rating">
+               Sortuj wg średniej oceny
+              </option>
+              <option selected="selected" value="date">
+               Sortuj wg daty dodania
+              </option>
+              <option value="price">
+               Sortuj wg ceny: od najniższej
+              </option>
+              <option value="price-desc">
+               Sortuj wg ceny: od najwyższej
+              </option>
+             </select>
+            </form>
+           </div>
+          </div>
+          <div class="row">
+           <div class="large-12 columns">
+            <hr class="catalog_top_sep"/>
+           </div>
+           <!-- .columns -->
+          </div>
+          <div class="row">
+           <div class="large-12 columns">
+            <div class="active_filters_ontop">
+            </div>
+            <div class="row">
+             <div class="large-12 columns">
+              <ul class=" products products-grid effect-e2 small-block-grid-2 medium-block-grid-3 large-block-grid-3 columns-3" id="products-grid">
+               <li class="">
+                <a class="woocommerce-LoopProduct-link woocommerce-loop-product__link" href="http://steeze.pl/produkt/winter-starter-val-thorens-07-16-12-18/">
+                 <div class="product_wrapper">
+                  <div class="product_thumbnail_wrapper">
+                   <div class="product_thumbnail ">
+                    <a href="http://steeze.pl/produkt/winter-starter-val-thorens-07-16-12-18/">
+                     <span class="product_thumbnail_background" style="">
+                     </span>
+                     <img alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" height="234" src="http://steeze.pl/wp-content/uploads/2018/09/17637235_10158639213015651_5165744590408908895_o.jpg" width="350"/>
+                    </a>
+                   </div>
+                  </div>
+                  <!--product_thumbnail_wrapper-->
+                  <h2>
+                   <a href="http://steeze.pl/produkt/winter-starter-val-thorens-07-16-12-18/">
+                    Winter Starter Val Thorens 07-16.12.18
+                   </a>
+                  </h2>
+                 </div>
+                 <!--product_wrapper-->
+                 <div class="product_after_shop_loop">
+                  <div class="product_after_shop_loop_switcher">
+                   <div class="product_after_shop_loop_price">
+                   </div>
+                   <div class="product_after_shop_loop_buttons">
+                   </div>
+                  </div>
+                 </div>
+                </a>
+                <a aria-label="Wybierz opcje dla “Winter Starter Val Thorens 07-16.12.18”" class="button product_type_variable" data-product_id="444" data-product_sku="" data-quantity="1" href="http://steeze.pl/produkt/winter-starter-val-thorens-07-16-12-18/" rel="nofollow">
+                 Czytaj dalej
+                </a>
+               </li>
+              </ul>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+<li class="">
+ <a class="woocommerce-LoopProduct-link woocommerce-loop-product__link" href="http://steeze.pl/produkt/powder-camp-gudauri-1-10-12-01-19/">
+  <div class="product_wrapper">
+   <div class="product_thumbnail_wrapper">
+    <div class="product_thumbnail ">
+     <a href="http://steeze.pl/produkt/powder-camp-gudauri-1-10-12-01-19/">
+      <span class="product_thumbnail_background" style="">
+      </span>
+      <img alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" height="233" src="http://steeze.pl/wp-content/uploads/2018/09/17311027_10158548179460651_1275502682715201913_o.jpg" width="350"/>
+     </a>
+    </div>
+   </div>
+   <!--product_thumbnail_wrapper-->
+   <h2>
+    <a href="http://steeze.pl/produkt/powder-camp-gudauri-1-10-12-01-19/">
+     Powder Camp Gudauri #1 10-18.01.19
+    </a>
+   </h2>
+  </div>
+  <!--product_wrapper-->
+  <div class="product_after_shop_loop">
+   <div class="product_after_shop_loop_switcher">
+    <div class="product_after_shop_loop_price">
+     <span class="price">
+      <span class="woocommerce-Price-amount amount">
+       1899.00
+       <span class="woocommerce-Price-currencySymbol">
+        zł
+       </span>
+      </span>
+     </span>
+    </div>
+    <div class="product_after_shop_loop_buttons">
+    </div>
+   </div>
+  </div>
+ </a>
+ <a aria-label="Dodaj “Powder Camp Gudauri #1 10-18.01.19” do koszyka" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="402" data-product_sku="" data-quantity="1" href="/wyjazdy/?add-to-cart=402" rel="nofollow">
+  Dodaj do koszyka
+ </a>
+</li>
+<li class="">
+ <a class="woocommerce-LoopProduct-link woocommerce-loop-product__link" href="http://steeze.pl/produkt/family-camp-1-26-01-02-02-19/">
+  <div class="product_wrapper">
+   <div class="product_thumbnail_wrapper">
+    <div class="product_thumbnail ">
+     <a href="http://steeze.pl/produkt/family-camp-1-26-01-02-02-19/">
+      <span class="product_thumbnail_background" style="">
+      </span>
+      <img alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" height="233" src="http://steeze.pl/wp-content/uploads/2018/09/27629459_10160128693570651_6858139714045985248_o.jpg" width="350"/>
+     </a>
+    </div>
+   </div>
+   <!--product_thumbnail_wrapper-->
+   <h2>
+    <a href="http://steeze.pl/produkt/family-camp-1-26-01-02-02-19/">
+     Family Camp #1 26.01-02.02.19
+    </a>
+   </h2>
+  </div>
+  <!--product_wrapper-->
+  <div class="product_after_shop_loop">
+   <div class="product_after_shop_loop_switcher">
+    <div class="product_after_shop_loop_price">
+     <span class="price">
+      <span class="woocommerce-Price-amount amount">
+       2099.00
+       <span class="woocommerce-Price-currencySymbol">
+        zł
+       </span>
+      </span>
+     </span>
+    </div>
+    <div class="product_after_shop_loop_buttons">
+    </div>
+   </div>
+  </div>
+ </a>
+ <a aria-label="Dodaj “Family Camp #1 26.01-02.02.19” do koszyka" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="457" data-product_sku="" data-quantity="1" href="/wyjazdy/?add-to-cart=457" rel="nofollow">
+  Dodaj do koszyka
+ </a>
+</li>
+<li class="">
+ <a class="woocommerce-LoopProduct-link woocommerce-loop-product__link" href="http://steeze.pl/produkt/snow-kids-ferie-zimowe-niederau-26-01-02-02-19/">
+  <div class="product_wrapper">
+   <div class="product_thumbnail_wrapper">
+    <div class="product_thumbnail ">
+     <a href="http://steeze.pl/produkt/snow-kids-ferie-zimowe-niederau-26-01-02-02-19/">
+      <span class="product_thumbnail_background" style="">
+      </span>
+      <img alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" height="234" src="http://steeze.pl/wp-content/uploads/2018/09/DSC_5151-Kopia.jpg" width="350"/>
+     </a>
+    </div>
+   </div>
+   <!--product_thumbnail_wrapper-->
+   <h2>
+    <a href="http://steeze.pl/produkt/snow-kids-ferie-zimowe-niederau-26-01-02-02-19/">
+     Snow Kids ferie zimowe Niederau 26.01-02.02.19
+    </a>
+   </h2>
+  </div>
+  <!--product_wrapper-->
+  <div class="product_after_shop_loop">
+   <div class="product_after_shop_loop_switcher">
+    <div class="product_after_shop_loop_price">
+     <span class="price">
+      <span class="woocommerce-Price-amount amount">
+       2250.00
+       <span class="woocommerce-Price-currencySymbol">
+        zł
+       </span>
+      </span>
+     </span>
+    </div>
+    <div class="product_after_shop_loop_buttons">
+    </div>
+   </div>
+  </div>
+ </a>
+ <a aria-label="Dodaj “Snow Kids ferie zimowe Niederau 26.01-02.02.19” do koszyka" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="574" data-product_sku="" data-quantity="1" href="/wyjazdy/?add-to-cart=574" rel="nofollow">
+  Dodaj do koszyka
+ </a>
+</li>
+<li class="">
+ <a class="woocommerce-LoopProduct-link woocommerce-loop-product__link" href="http://steeze.pl/produkt/snow-kids-ferie-zimowe-02-09-02-19/">
+  <div class="product_wrapper">
+   <div class="product_thumbnail_wrapper">
+    <div class="product_thumbnail ">
+     <a href="http://steeze.pl/produkt/snow-kids-ferie-zimowe-02-09-02-19/">
+      <span class="product_thumbnail_background" style="">
+      </span>
+      <img alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" height="233" src="http://steeze.pl/wp-content/uploads/2018/09/27356057_10160128688070651_9213838156715862275_o.jpg" width="350"/>
+     </a>
+    </div>
+   </div>
+   <!--product_thumbnail_wrapper-->
+   <h2>
+    <a href="http://steeze.pl/produkt/snow-kids-ferie-zimowe-02-09-02-19/">
+     Snow Kids ferie zimowe 02-09.02.19
+    </a>
+   </h2>
+  </div>
+  <!--product_wrapper-->
+  <div class="product_after_shop_loop">
+   <div class="product_after_shop_loop_switcher">
+    <div class="product_after_shop_loop_price">
+     <span class="price">
+      <span class="woocommerce-Price-amount amount">
+       1399.00
+       <span class="woocommerce-Price-currencySymbol">
+        zł
+       </span>
+      </span>
+     </span>
+    </div>
+    <div class="product_after_shop_loop_buttons">
+    </div>
+   </div>
+  </div>
+ </a>
+ <a aria-label="Dodaj “Snow Kids ferie zimowe 02-09.02.19” do koszyka" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="429" data-product_sku="" data-quantity="1" href="/wyjazdy/?add-to-cart=429" rel="nofollow">
+  Dodaj do koszyka
+ </a>
+</li>
+<li class="">
+ <a class="woocommerce-LoopProduct-link woocommerce-loop-product__link" href="http://steeze.pl/produkt/kurs-lawinowy-1-15-17-02-19/">
+  <div class="product_wrapper">
+   <div class="product_thumbnail_wrapper">
+    <div class="product_thumbnail ">
+     <a href="http://steeze.pl/produkt/kurs-lawinowy-1-15-17-02-19/">
+      <span class="product_thumbnail_background" style="">
+      </span>
+      <img alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" height="234" src="http://steeze.pl/wp-content/uploads/2018/09/DSC_6847.jpg" width="350"/>
+     </a>
+    </div>
+   </div>
+   <!--product_thumbnail_wrapper-->
+   <h2>
+    <a href="http://steeze.pl/produkt/kurs-lawinowy-1-15-17-02-19/">
+     Kurs lawinowy #1 15-17.02.19
+    </a>
+   </h2>
+  </div>
+  <!--product_wrapper-->
+  <div class="product_after_shop_loop">
+   <div class="product_after_shop_loop_switcher">
+    <div class="product_after_shop_loop_price">
+     <span class="price">
+      <span class="woocommerce-Price-amount amount">
+       450.00
+       <span class="woocommerce-Price-currencySymbol">
+        zł
+       </span>
+      </span>
+     </span>
+    </div>
+    <div class="product_after_shop_loop_buttons">
+    </div>
+   </div>
+  </div>
+ </a>
+ <a aria-label="Dodaj “Kurs lawinowy #1 15-17.02.19” do koszyka" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="466" data-product_sku="" data-quantity="1" href="/wyjazdy/?add-to-cart=466" rel="nofollow">
+  Dodaj do koszyka
+ </a>
+</li>
+<li class="">
+ <a class="woocommerce-LoopProduct-link woocommerce-loop-product__link" href="http://steeze.pl/produkt/kurs-lawinowy-2-01-03-03-19/">
+  <div class="product_wrapper">
+   <div class="product_thumbnail_wrapper">
+    <div class="product_thumbnail ">
+     <a href="http://steeze.pl/produkt/kurs-lawinowy-2-01-03-03-19/">
+      <span class="product_thumbnail_background" style="">
+      </span>
+      <img alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" height="234" src="http://steeze.pl/wp-content/uploads/2018/09/DSC_8276-—-kopia.jpg" width="350"/>
+     </a>
+    </div>
+   </div>
+   <!--product_thumbnail_wrapper-->
+   <h2>
+    <a href="http://steeze.pl/produkt/kurs-lawinowy-2-01-03-03-19/">
+     Kurs lawinowy #2 01-03.03.19
+    </a>
+   </h2>
+  </div>
+  <!--product_wrapper-->
+  <div class="product_after_shop_loop">
+   <div class="product_after_shop_loop_switcher">
+    <div class="product_after_shop_loop_price">
+     <span class="price">
+      <span class="woocommerce-Price-amount amount">
+       450.00
+       <span class="woocommerce-Price-currencySymbol">
+        zł
+       </span>
+      </span>
+     </span>
+    </div>
+    <div class="product_after_shop_loop_buttons">
+    </div>
+   </div>
+  </div>
+ </a>
+ <a aria-label="Dodaj “Kurs lawinowy #2 01-03.03.19” do koszyka" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="487" data-product_sku="" data-quantity="1" href="/wyjazdy/?add-to-cart=487" rel="nofollow">
+  Dodaj do koszyka
+ </a>
+</li>
+<li class="">
+ <a class="woocommerce-LoopProduct-link woocommerce-loop-product__link" href="http://steeze.pl/produkt/powder-camp-gudauri-2-07-15-03-19/">
+  <div class="product_wrapper">
+   <div class="product_thumbnail_wrapper">
+    <div class="product_thumbnail ">
+     <a href="http://steeze.pl/produkt/powder-camp-gudauri-2-07-15-03-19/">
+      <span class="product_thumbnail_background" style="">
+      </span>
+      <img alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" height="234" src="http://steeze.pl/wp-content/uploads/2018/09/17311052_10158548185225651_6306761291779280498_o-1.jpg" width="350"/>
+     </a>
+    </div>
+   </div>
+   <!--product_thumbnail_wrapper-->
+   <h2>
+    <a href="http://steeze.pl/produkt/powder-camp-gudauri-2-07-15-03-19/">
+     Powder Camp Gudauri #2 07-15.03.19
+    </a>
+   </h2>
+  </div>
+  <!--product_wrapper-->
+  <div class="product_after_shop_loop">
+   <div class="product_after_shop_loop_switcher">
+    <div class="product_after_shop_loop_price">
+     <span class="price">
+      <span class="woocommerce-Price-amount amount">
+       1899.00
+       <span class="woocommerce-Price-currencySymbol">
+        zł
+       </span>
+      </span>
+     </span>
+    </div>
+    <div class="product_after_shop_loop_buttons">
+    </div>
+   </div>
+  </div>
+ </a>
+ <a aria-label="Dodaj “Powder Camp Gudauri #2 07-15.03.19” do koszyka" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="427" data-product_sku="" data-quantity="1" href="/wyjazdy/?add-to-cart=427" rel="nofollow">
+  Dodaj do koszyka
+ </a>
+</li>
+<li class="">
+ <a class="woocommerce-LoopProduct-link woocommerce-loop-product__link" href="http://steeze.pl/produkt/winter-break-chamrousse-08-17-03-19/">
+  <div class="product_wrapper">
+   <div class="product_thumbnail_wrapper">
+    <div class="product_thumbnail ">
+     <a href="http://steeze.pl/produkt/winter-break-chamrousse-08-17-03-19/">
+      <span class="product_thumbnail_background" style="">
+      </span>
+      <img alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" height="234" src="http://steeze.pl/wp-content/uploads/2018/09/16664930_10158367492075651_8908042882426896405_o.jpg" width="350"/>
+     </a>
+    </div>
+   </div>
+   <!--product_thumbnail_wrapper-->
+   <h2>
+    <a href="http://steeze.pl/produkt/winter-break-chamrousse-08-17-03-19/">
+     Winter Break Chamrousse  08-17.03.19
+    </a>
+   </h2>
+  </div>
+  <!--product_wrapper-->
+  <div class="product_after_shop_loop">
+   <div class="product_after_shop_loop_switcher">
+    <div class="product_after_shop_loop_price">
+     <span class="price">
+      <span class="woocommerce-Price-amount amount">
+       1449.00
+       <span class="woocommerce-Price-currencySymbol">
+        zł
+       </span>
+      </span>
+     </span>
+    </div>
+    <div class="product_after_shop_loop_buttons">
+    </div>
+   </div>
+  </div>
+ </a>
+ <a aria-label="Dodaj “Winter Break Chamrousse  08-17.03.19” do koszyka" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="489" data-product_sku="" data-quantity="1" href="/wyjazdy/?add-to-cart=489" rel="nofollow">
+  Dodaj do koszyka
+ </a>
+</li>
+<li class="">
+ <a class="woocommerce-LoopProduct-link woocommerce-loop-product__link" href="http://steeze.pl/produkt/snow-week_les2alpes-15-24-03-19/">
+  <div class="product_wrapper">
+   <div class="product_thumbnail_wrapper">
+    <div class="product_thumbnail ">
+     <a href="http://steeze.pl/produkt/snow-week_les2alpes-15-24-03-19/">
+      <span class="product_thumbnail_background" style="">
+      </span>
+      <img alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" height="233" src="http://steeze.pl/wp-content/uploads/2018/09/17990204_10158726538370651_3096912357603416079_o.jpg" width="350"/>
+     </a>
+    </div>
+   </div>
+   <!--product_thumbnail_wrapper-->
+   <h2>
+    <a href="http://steeze.pl/produkt/snow-week_les2alpes-15-24-03-19/">
+     Snow Week Les2Alpes 15-24.03.19
+    </a>
+   </h2>
+  </div>
+  <!--product_wrapper-->
+  <div class="product_after_shop_loop">
+   <div class="product_after_shop_loop_switcher">
+    <div class="product_after_shop_loop_price">
+     <span class="price">
+      <span class="woocommerce-Price-amount amount">
+       1799.00
+       <span class="woocommerce-Price-currencySymbol">
+        zł
+       </span>
+      </span>
+     </span>
+    </div>
+    <div class="product_after_shop_loop_buttons">
+    </div>
+   </div>
+  </div>
+ </a>
+ <a aria-label="Dodaj “Snow Week Les2Alpes 15-24.03.19” do koszyka" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="488" data-product_sku="" data-quantity="1" href="/wyjazdy/?add-to-cart=488" rel="nofollow">
+  Dodaj do koszyka
+ </a>
+</li>
+<li class="">
+ <a class="woocommerce-LoopProduct-link woocommerce-loop-product__link" href="http://steeze.pl/produkt/family-camp-2-niederau-16-23-03-19/">
+  <div class="product_wrapper">
+   <div class="product_thumbnail_wrapper">
+    <div class="product_thumbnail ">
+     <a href="http://steeze.pl/produkt/family-camp-2-niederau-16-23-03-19/">
+      <span class="product_thumbnail_background" style="">
+      </span>
+      <img alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" height="233" src="http://steeze.pl/wp-content/uploads/2018/09/27355933_10160128692250651_6563925066716055108_o.jpg" width="350"/>
+     </a>
+    </div>
+   </div>
+   <!--product_thumbnail_wrapper-->
+   <h2>
+    <a href="http://steeze.pl/produkt/family-camp-2-niederau-16-23-03-19/">
+     Family Camp #2  Niederau 16-23.03.19
+    </a>
+   </h2>
+  </div>
+  <!--product_wrapper-->
+  <div class="product_after_shop_loop">
+   <div class="product_after_shop_loop_switcher">
+    <div class="product_after_shop_loop_price">
+     <span class="price">
+      <span class="woocommerce-Price-amount amount">
+       2099.00
+       <span class="woocommerce-Price-currencySymbol">
+        zł
+       </span>
+      </span>
+     </span>
+    </div>
+    <div class="product_after_shop_loop_buttons">
+    </div>
+   </div>
+  </div>
+ </a>
+ <a aria-label="Dodaj “Family Camp #2  Niederau 16-23.03.19” do koszyka" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="549" data-product_sku="" data-quantity="1" href="/wyjazdy/?add-to-cart=549" rel="nofollow">
+  Dodaj do koszyka
+ </a>
+</li>
+<li class="">
+ <a class="woocommerce-LoopProduct-link woocommerce-loop-product__link" href="http://steeze.pl/produkt/hello-swiss-verbier-22-31-03-19/">
+  <div class="product_wrapper">
+   <div class="product_thumbnail_wrapper">
+    <div class="product_thumbnail ">
+     <a href="http://steeze.pl/produkt/hello-swiss-verbier-22-31-03-19/">
+      <span class="product_thumbnail_background" style="">
+      </span>
+      <img alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" height="233" src="http://steeze.pl/wp-content/uploads/2018/09/18055844_10158726538605651_8206239665141768648_o.jpg" width="350"/>
+     </a>
+    </div>
+   </div>
+   <!--product_thumbnail_wrapper-->
+   <h2>
+    <a href="http://steeze.pl/produkt/hello-swiss-verbier-22-31-03-19/">
+     Hello Swiss Verbier 22-31.03.19
+    </a>
+   </h2>
+  </div>
+  <!--product_wrapper-->
+  <div class="product_after_shop_loop">
+   <div class="product_after_shop_loop_switcher">
+    <div class="product_after_shop_loop_price">
+     <span class="price">
+      <span class="woocommerce-Price-amount amount">
+       1899.00
+       <span class="woocommerce-Price-currencySymbol">
+        zł
+       </span>
+      </span>
+     </span>
+    </div>
+    <div class="product_after_shop_loop_buttons">
+    </div>
+   </div>
+  </div>
+ </a>
+ <a aria-label="Dodaj “Hello Swiss Verbier 22-31.03.19” do koszyka" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="490" data-product_sku="" data-quantity="1" href="/wyjazdy/?add-to-cart=490" rel="nofollow">
+  Dodaj do koszyka
+ </a>
+</li>
+<li class="">
+ <a class="woocommerce-LoopProduct-link woocommerce-loop-product__link" href="http://steeze.pl/produkt/chill-week-vars-29-03-07-04-19/">
+  <div class="product_wrapper">
+   <div class="product_thumbnail_wrapper">
+    <div class="product_thumbnail ">
+     <a href="http://steeze.pl/produkt/chill-week-vars-29-03-07-04-19/">
+      <span class="product_thumbnail_background" style="">
+      </span>
+      <img alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" height="233" src="http://steeze.pl/wp-content/uploads/2018/09/16406941_10158326512905651_4944959236192746505_n.jpg" width="350"/>
+     </a>
+    </div>
+   </div>
+   <!--product_thumbnail_wrapper-->
+   <h2>
+    <a href="http://steeze.pl/produkt/chill-week-vars-29-03-07-04-19/">
+     Chill Week Vars 29.03 – 07.04.19
+    </a>
+   </h2>
+  </div>
+  <!--product_wrapper-->
+  <div class="product_after_shop_loop">
+   <div class="product_after_shop_loop_switcher">
+    <div class="product_after_shop_loop_price">
+     <span class="price">
+      <span class="woocommerce-Price-amount amount">
+       1549.00
+       <span class="woocommerce-Price-currencySymbol">
+        zł
+       </span>
+      </span>
+     </span>
+    </div>
+    <div class="product_after_shop_loop_buttons">
+    </div>
+   </div>
+  </div>
+ </a>
+ <a aria-label="Dodaj “Chill Week Vars 29.03 - 07.04.19” do koszyka" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="476" data-product_sku="" data-quantity="1" href="/wyjazdy/?add-to-cart=476" rel="nofollow">
+  Dodaj do koszyka
+ </a>
+</li>
+<li class="">
+ <a class="woocommerce-LoopProduct-link woocommerce-loop-product__link" href="http://steeze.pl/produkt/im-going-to-livigno-05-19-04-19/">
+  <div class="product_wrapper">
+   <div class="product_thumbnail_wrapper">
+    <div class="product_thumbnail ">
+     <a href="http://steeze.pl/produkt/im-going-to-livigno-05-19-04-19/">
+      <span class="product_thumbnail_background" style="">
+      </span>
+      <img alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" height="234" src="http://steeze.pl/wp-content/uploads/2018/09/29873040_10160439387875651_6755407518061443181_o.jpg" width="350"/>
+     </a>
+    </div>
+   </div>
+   <!--product_thumbnail_wrapper-->
+   <h2>
+    <a href="http://steeze.pl/produkt/im-going-to-livigno-05-19-04-19/">
+     I’m going to Livigno 05-14.04.19
+    </a>
+   </h2>
+  </div>
+  <!--product_wrapper-->
+  <div class="product_after_shop_loop">
+   <div class="product_after_shop_loop_switcher">
+    <div class="product_after_shop_loop_price">
+     <span class="price">
+      <span class="woocommerce-Price-amount amount">
+       1749.00
+       <span class="woocommerce-Price-currencySymbol">
+        zł
+       </span>
+      </span>
+     </span>
+    </div>
+    <div class="product_after_shop_loop_buttons">
+    </div>
+   </div>
+  </div>
+ </a>
+ <a aria-label="Dodaj “I'm going to Livigno 05-14.04.19” do koszyka" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="474" data-product_sku="" data-quantity="1" href="/wyjazdy/?add-to-cart=474" rel="nofollow">
+  Dodaj do koszyka
+ </a>
+</li>
+<li class="">
+ <a class="woocommerce-LoopProduct-link woocommerce-loop-product__link" href="http://steeze.pl/produkt/turcja-hip-notics-24-31-10-2018/">
+  <div class="product_wrapper">
+   <div class="product_thumbnail_wrapper">
+    <div class="product_thumbnail ">
+     <a href="http://steeze.pl/produkt/turcja-hip-notics-24-31-10-2018/">
+      <span class="product_thumbnail_background" style="">
+      </span>
+      <img alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" height="182" src="http://steeze.pl/wp-content/uploads/2018/08/screenshooter-imageconverter5b4b7e20445621.png" width="350"/>
+     </a>
+    </div>
+   </div>
+   <!--product_thumbnail_wrapper-->
+   <h2>
+    <a href="http://steeze.pl/produkt/turcja-hip-notics-24-31-10-2018/">
+     Turcja Hip-Notics 24-31.10.2018
+    </a>
+   </h2>
+  </div>
+  <!--product_wrapper-->
+  <div class="product_after_shop_loop">
+   <div class="product_after_shop_loop_switcher">
+    <div class="product_after_shop_loop_price">
+     <span class="price">
+      <span class="woocommerce-Price-amount amount">
+       2499.00
+       <span class="woocommerce-Price-currencySymbol">
+        zł
+       </span>
+      </span>
+     </span>
+    </div>
+    <div class="product_after_shop_loop_buttons">
+    </div>
+   </div>
+  </div>
+ </a>
+ <a aria-label="Dodaj “Turcja Hip-Notics 24-31.10.2018” do koszyka" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="380" data-product_sku="" data-quantity="1" href="/wyjazdy/?add-to-cart=380" rel="nofollow">
+  Dodaj do koszyka
+ </a>
+</li>
+<li class="">
+ <a class="woocommerce-LoopProduct-link woocommerce-loop-product__link" href="http://steeze.pl/produkt/sardynia-kitejoga/">
+  <div class="product_wrapper">
+   <div class="product_thumbnail_wrapper">
+    <div class="product_thumbnail ">
+     <a href="http://steeze.pl/produkt/sardynia-kitejoga/">
+      <span class="product_thumbnail_background" style="">
+      </span>
+      <img alt="" class="attachment-shop_catalog size-shop_catalog wp-post-image" height="232" src="http://steeze.pl/wp-content/uploads/2018/07/DSC_9038.jpg" width="350"/>
+     </a>
+    </div>
+   </div>
+   <!--product_thumbnail_wrapper-->
+   <h2>
+    <a href="http://steeze.pl/produkt/sardynia-kitejoga/">
+     Sardynia Kite&amp;Joga 15-30.09.18 (4 terminy)
+    </a>
+   </h2>
+  </div>
+  <!--product_wrapper-->
+  <div class="product_after_shop_loop">
+   <div class="product_after_shop_loop_switcher">
+    <div class="product_after_shop_loop_price">
+     <span class="price">
+      <span class="woocommerce-Price-amount amount">
+       1250.00
+       <span class="woocommerce-Price-currencySymbol">
+        zł
+       </span>
+      </span>
+     </span>
+    </div>
+    <div class="product_after_shop_loop_buttons">
+    </div>
+   </div>
+  </div>
+ </a>
+ <a aria-label="Dodaj “Sardynia Kite&amp;Joga 15-30.09.18 (4 terminy)” do koszyka" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="343" data-product_sku="" data-quantity="1" href="/wyjazdy/?add-to-cart=343" rel="nofollow">
+  Dodaj do koszyka
+ </a>
+</li>
+<!-- .columns -->
+<!-- .row -->
+<div class="woocommerce-after-shop-loop-wrapper">
+</div>
+<!-- .columns -->
+<!--.row-->
+<!-- #content -->
+<!-- .columns -->
+<!-- .row -->
+<!-- #primary -->
+<footer id="site-footer" role="contentinfo">
+ <div class="trigger-footer-widget-area">
+  <span class="trigger-footer-widget-icon">
+  </span>
+ </div>
+ <div class="site-footer-widget-area" style="">
+  <div class="row">
+   <div class="widget_text large-12 medium-12 small-12 columns">
+    <aside class="widget_text widget widget_custom_html" id="custom_html-3">
+     <h3 class="widget-title">
+      Strony
+     </h3>
+     <div class="textwidget custom-html-widget">
+      <div>
+       <a href="">
+        Wyjazdy
+       </a>
+       <br/>
+       <a href="">
+        Dlaczego My
+       </a>
+       <br/>
+       <a href="">
+        Poznaj Nas
+       </a>
+       <br/>
+       <a href="">
+        Atrakcje
+       </a>
+       <br/>
+       <a href="">
+        FAQs
+       </a>
+       <br/>
+       <a href="/regulamin/">
+        Regulamin
+       </a>
+       <br/>
+       <a href="/polityka-prywatnosci/">
+        Polityka Prywatności
+       </a>
+       <br/>
+       <a href="">
+        Kontakt
+       </a>
+       <br/>
+      </div>
+     </div>
+    </aside>
+   </div>
+  </div>
+  <!-- .row -->
+ </div>
+ <!-- .site-footer-widget-area -->
+ <div class="site-footer-copyright-area">
+  <div class="row">
+   <div class="medium-4 columns">
+    <div class="payment_methods">
+     <img alt="Payment methods" src="https://wakecamp.pl/wp-content/uploads/2017/04/payment_cards-1.png"/>
+    </div>
+    <!-- .payment_methods -->
+   </div>
+   <!-- .large-4 .columns -->
+   <div class="medium-8 columns">
+    <div class="copyright_text">
+     © STEEZE.PL
+    </div>
+    <!-- .copyright_text -->
+   </div>
+   <!-- .large-8 .columns -->
+  </div>
+  <!-- .row -->
+ </div>
+ <!-- .site-footer-copyright-area -->
+</footer>
+<!-- #page -->
+<!-- /st-content -->
+<!-- /st-pusher -->
+<nav class="st-menu slide-from-left">
+ <div class="nano">
+  <div class="nano-content">
+   <div class="offcanvas-left-content" id="mobiles-menu-offcanvas">
+    <nav class="mobile-navigation" id="mobile-main-navigation" role="navigation">
+     <ul id="menu-mainmenu-1">
+      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-8" id="menu-item-8">
+       <a href="/kategoria-produktu/wyjazdy">
+        Wyjazdy
+       </a>
+       <ul class="sub-menu">
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-528" id="menu-item-528">
+         <a href="http://steeze.pl/kategoria-produktu/wyjazdy/">
+          Winter Starter Val Thorens 07-16.12.18
+         </a>
+        </li>
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-529" id="menu-item-529">
+         <a href="http://steeze.pl/produkt/powder-camp-gudauri-1-10-12-01-19/">
+          Powder Camp Gudauri #1 10-18.01.19
+         </a>
+        </li>
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-548" id="menu-item-548">
+         <a href="http://steeze.pl/produkt/family-camp-1-26-01-02-02-19/#1536663841546-03069a27-d136">
+          Family Camp #1 26.01-02.02.19
+         </a>
+        </li>
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-575" id="menu-item-575">
+         <a href="http://steeze.pl/produkt/snow-kids-ferie-zimowe-niederau-26-01-02-02-19/">
+          Snow Kids ferie zimowe Niederau 26.01-02.02.19
+         </a>
+        </li>
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-530" id="menu-item-530">
+         <a href="http://steeze.pl/produkt/snow-kids-ferie-zimowe-02-09-02-19/">
+          Snow Kids ferie zimowe 02-09.02.19
+         </a>
+        </li>
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-532" id="menu-item-532">
+         <a href="http://steeze.pl/produkt/kurs-lawinowy-1-15-17-02-19/">
+          Kurs lawinowy #1 15-17.02.19
+         </a>
+        </li>
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-534" id="menu-item-534">
+         <a href="http://steeze.pl/produkt/kurs-lawinowy-2-01-03-03-19/">
+          Kurs lawinowy #2 01-03.03.19
+         </a>
+        </li>
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-535" id="menu-item-535">
+         <a href="http://steeze.pl/produkt/powder-camp-gudauri-2-07-15-03-19/">
+          Powder Camp Gudauri #2 07-15.03.19
+         </a>
+        </li>
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-536" id="menu-item-536">
+         <a href="http://steeze.pl/produkt/winter-break-chamrousse-08-17-03-19/">
+          Winter Break Chamrousse 08-17.03.19
+         </a>
+        </li>
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-537" id="menu-item-537">
+         <a href="http://steeze.pl/produkt/snow-week_les2alpes-15-24-03-19/">
+          Snow Week Les2Alpes 15-24.03.19
+         </a>
+        </li>
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-551" id="menu-item-551">
+         <a href="http://steeze.pl/produkt/family-camp-2-niederau-16-23-03-19/">
+          Family Camp #2 Niederau 16-23.03.19
+         </a>
+        </li>
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-527" id="menu-item-527">
+         <a href="http://steeze.pl/produkt/hello-swiss-verbier-22-31-03-19/">
+          Hello Swiss Verbier 22-31.03.19
+         </a>
+        </li>
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-539" id="menu-item-539">
+         <a href="http://steeze.pl/produkt/chill-week-vars-29-03-07-04-19/">
+          Chill Week Vars 29.03 – 07.04.19
+         </a>
+        </li>
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-546" id="menu-item-546">
+         <a href="http://steeze.pl/produkt/im-going-to-livigno-05-19-04-19/">
+          I’m going to Livigno 05-19.04.19
+         </a>
+        </li>
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-368" id="menu-item-368">
+         <a href="http://steeze.pl/produkt/sardynia-kitejoga/">
+          Sardynia Kite&amp;Joga 15-30.09.18
+         </a>
+        </li>
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-388" id="menu-item-388">
+         <a href="http://steeze.pl/produkt/turcja-hip-notics-24-31-10-2018/">
+          Turcja Hip-Notics 24-31.10.2018
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-44" id="menu-item-44">
+       <a href="#">
+        Poznaj Nas
+       </a>
+       <ul class="sub-menu">
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42" id="menu-item-42">
+         <a href="http://steeze.pl/o-steeze/">
+          O Steeze
+         </a>
+        </li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15" id="menu-item-15">
+         <a href="http://steeze.pl/dlaczego-my/">
+          Dlaczego My
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-52" id="menu-item-52">
+       <a href="#">
+        Co robimy
+       </a>
+       <ul class="sub-menu">
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85" id="menu-item-85">
+         <a href="http://steeze.pl/snowboard-narty/">
+          Snowboard &amp; Narty
+         </a>
+        </li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-61" id="menu-item-61">
+         <a href="http://steeze.pl/wake/">
+          Wake
+         </a>
+        </li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-53" id="menu-item-53">
+         <a href="http://steeze.pl/kitesurfing/">
+          Kitesurfing
+         </a>
+        </li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70" id="menu-item-70">
+         <a href="http://steeze.pl/windsurfing/">
+          Windsurfing kids
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75" id="menu-item-75">
+       <a href="http://steeze.pl/newsy/">
+        Newsy
+       </a>
+      </li>
+      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-80" id="menu-item-80">
+       <a href="http://steeze.pl/kontakt/">
+        Kontakt
+       </a>
+      </li>
+     </ul>
+    </nav>
+    <div class="mobile-socials">
+     <div class="site-social-icons">
+      <ul class="//animated //flipY">
+       <li class="site-social-icons-facebook">
+        <a href="https://www.facebook.com/Steezepl/" target="_blank">
+         <i class="fa fa-facebook">
+         </i>
+         <span>
+          Facebook
+         </span>
+        </a>
+       </li>
+       <li class="site-social-icons-instagram">
+        <a href="https://www.instagram.com/steezetravel/" target="_blank">
+         <i class="fa fa-instagram">
+         </i>
+         <span>
+          Instagram
+         </span>
+        </a>
+       </li>
+       <li class="site-social-icons-youtube">
+        <a href="https://www.youtube.com/channel/UCfifA9sX4vRZIHLmq8GzAwA" target="_blank">
+         <i class="fa fa-youtube-play">
+         </i>
+         <span>
+          Youtube
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="offcanvas-left-content wpb_widgetised_column" id="filters-offcanvas">
+   </div>
+  </div>
+ </div>
+</nav>
+<nav class="st-menu slide-from-right">
+ <div class="nano">
+  <div class="nano-content">
+   <div class="offcanvas-right-content" id="minicart-offcanvas">
+    <div class="widget woocommerce widget_shopping_cart">
+     <h2 class="widgettitle">
+      Koszyk
+     </h2>
+     <div class="widget_shopping_cart_content">
+     </div>
+    </div>
+   </div>
+   <div class="offcanvas-right-content" id="wishlist-offcanvas">
+    <div class="widget">
+    </div>
+   </div>
+  </div>
+ </div>
+</nav>
+<!-- /st-container -->
+<!-- ******************************************************************** -->
+<!-- * Custom Footer JavaScript Code ************************************ -->
+<!-- ******************************************************************** -->
+<script type="text/javascript">
+ var maxHeight = 0;
+jQuery('.one-height').each(function(){
+    if (jQuery(this).height() > maxHeight) { maxHeight = jQuery(this).height(); }
+});
+jQuery('.one-height').height(maxHeight);
+
+jQuery(document).ready(function(){
+    var rodo_box = Cookies.get('rodo_box');
+    if (rodo_box != null || jQuery('.page-id-327').length) {
+        jQuery('.rodo-overlay').hide().remove();
+    }
+    else{jQuery('.rodo-overlay').fadeIn(500)}
+    jQuery('#accept-button').click(function(event) {
+        event.preventDefault();
+        Cookies.set('rodo_box','accept',{ expires: 7, path: '/' });
+        jQuery('.rodo-overlay').fadeOut(500);
+    });
+    jQuery('#later-button').click(function(event) {
+        event.preventDefault();
+        Cookies.set('rodo_box','accept');
+        jQuery('.rodo-overlay').fadeOut(500).remove();
+    });
+});
+</script>
+<!-- ******************************************************************** -->
+<!-- * Sticky Header **************************************************** -->
+<!-- ******************************************************************** -->
+<div class="site-header-sticky">
+ <div class="row">
+  <div class="large-12 columns">
+   <div class="site-header-sticky-inner">
+    <div class="site-branding">
+     <a href="http://steeze.pl/" rel="home">
+      <img alt="STEEZE.PL" class="site-logo" src="http://steeze.pl/wp-content/uploads/2018/09/41294800_2161651574101720_8767112382485889024_n.png" title="wyjazdy sportowe, aktywne wakacje, wake camp, kite, snowboard"/>
+     </a>
+    </div>
+    <!-- .site-branding -->
+    <div id="site-menu">
+     <nav class="main-navigation" id="site-navigation" role="navigation">
+      <ul id="menu-mainmenu-2">
+       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children" id="mrtailor-menu-item-8">
+        <a href="/kategoria-produktu/wyjazdy">
+         <strong>
+          Wyjazdy
+         </strong>
+        </a>
+        <ul class="sub-menu level-0">
+         <li class="menu-item menu-item-type-custom menu-item-object-custom" id="mrtailor-menu-item-528">
+          <a href="http://steeze.pl/kategoria-produktu/wyjazdy/">
+           Winter Starter Val Thorens 07-16.12.18
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-object-custom" id="mrtailor-menu-item-529">
+          <a href="http://steeze.pl/produkt/powder-camp-gudauri-1-10-12-01-19/">
+           Powder Camp Gudauri #1 10-18.01.19
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-object-custom" id="mrtailor-menu-item-548">
+          <a href="http://steeze.pl/produkt/family-camp-1-26-01-02-02-19/#1536663841546-03069a27-d136">
+           Family Camp #1 26.01-02.02.19
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-object-custom" id="mrtailor-menu-item-575">
+          <a href="http://steeze.pl/produkt/snow-kids-ferie-zimowe-niederau-26-01-02-02-19/">
+           Snow Kids ferie zimowe Niederau 26.01-02.02.19
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-object-custom" id="mrtailor-menu-item-530">
+          <a href="http://steeze.pl/produkt/snow-kids-ferie-zimowe-02-09-02-19/">
+           Snow Kids ferie zimowe 02-09.02.19
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-object-custom" id="mrtailor-menu-item-532">
+          <a href="http://steeze.pl/produkt/kurs-lawinowy-1-15-17-02-19/">
+           Kurs lawinowy #1 15-17.02.19
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-object-custom" id="mrtailor-menu-item-534">
+          <a href="http://steeze.pl/produkt/kurs-lawinowy-2-01-03-03-19/">
+           Kurs lawinowy #2 01-03.03.19
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-object-custom" id="mrtailor-menu-item-535">
+          <a href="http://steeze.pl/produkt/powder-camp-gudauri-2-07-15-03-19/">
+           Powder Camp Gudauri #2 07-15.03.19
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-object-custom" id="mrtailor-menu-item-536">
+          <a href="http://steeze.pl/produkt/winter-break-chamrousse-08-17-03-19/">
+           Winter Break Chamrousse 08-17.03.19
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-object-custom" id="mrtailor-menu-item-537">
+          <a href="http://steeze.pl/produkt/snow-week_les2alpes-15-24-03-19/">
+           Snow Week Les2Alpes 15-24.03.19
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-object-custom" id="mrtailor-menu-item-551">
+          <a href="http://steeze.pl/produkt/family-camp-2-niederau-16-23-03-19/">
+           Family Camp #2 Niederau 16-23.03.19
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-object-custom" id="mrtailor-menu-item-527">
+          <a href="http://steeze.pl/produkt/hello-swiss-verbier-22-31-03-19/">
+           Hello Swiss Verbier 22-31.03.19
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-object-custom" id="mrtailor-menu-item-539">
+          <a href="http://steeze.pl/produkt/chill-week-vars-29-03-07-04-19/">
+           Chill Week Vars 29.03 – 07.04.19
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-object-custom" id="mrtailor-menu-item-546">
+          <a href="http://steeze.pl/produkt/im-going-to-livigno-05-19-04-19/">
+           I’m going to Livigno 05-19.04.19
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-object-custom" id="mrtailor-menu-item-368">
+          <a href="http://steeze.pl/produkt/sardynia-kitejoga/">
+           Sardynia Kite&amp;Joga 15-30.09.18
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-object-custom" id="mrtailor-menu-item-388">
+          <a href="http://steeze.pl/produkt/turcja-hip-notics-24-31-10-2018/">
+           Turcja Hip-Notics 24-31.10.2018
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children" id="mrtailor-menu-item-44">
+        <a href="#">
+         <strong>
+          Poznaj Nas
+         </strong>
+        </a>
+        <ul class="sub-menu level-0">
+         <li class="menu-item menu-item-type-post_type menu-item-object-page" id="mrtailor-menu-item-42">
+          <a href="http://steeze.pl/o-steeze/">
+           O Steeze
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-post_type menu-item-object-page" id="mrtailor-menu-item-15">
+          <a href="http://steeze.pl/dlaczego-my/">
+           Dlaczego My
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children" id="mrtailor-menu-item-52">
+        <a href="#">
+         <strong>
+          Co robimy
+         </strong>
+        </a>
+        <ul class="sub-menu level-0">
+         <li class="menu-item menu-item-type-post_type menu-item-object-page" id="mrtailor-menu-item-85">
+          <a href="http://steeze.pl/snowboard-narty/">
+           Snowboard &amp; Narty
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-post_type menu-item-object-page" id="mrtailor-menu-item-61">
+          <a href="http://steeze.pl/wake/">
+           Wake
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-post_type menu-item-object-page" id="mrtailor-menu-item-53">
+          <a href="http://steeze.pl/kitesurfing/">
+           Kitesurfing
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-post_type menu-item-object-page" id="mrtailor-menu-item-70">
+          <a href="http://steeze.pl/windsurfing/">
+           Windsurfing kids
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-object-page" id="mrtailor-menu-item-75">
+        <a href="http://steeze.pl/newsy/">
+         <strong>
+          Newsy
+         </strong>
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-object-page" id="mrtailor-menu-item-80">
+        <a href="http://steeze.pl/kontakt/">
+         <strong>
+          Kontakt
+         </strong>
+        </a>
+       </li>
+      </ul>
+     </nav>
+     <!-- #site-navigation -->
+     <div class="site-tools">
+      <ul>
+       <li class="mobile-menu-button">
+        <a href="javascript:void(0)">
+         <i class="getbowtied-icon-menu">
+         </i>
+        </a>
+       </li>
+       <li class="search-button">
+        <a href="javascript:void(0)">
+         <i class="getbowtied-icon-search">
+         </i>
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <!-- #site-menu -->
+    <div class="clearfix">
+    </div>
+   </div>
+   <!--.site-header-sticky-inner-->
+  </div>
+  <!-- .large-12-->
+ </div>
+ <!--.row-->
+</div>
+<!-- .site-header-sticky -->
+<!-- ******************************************************************** -->
+<!-- * WP Footer() ****************************************************** -->
+<!-- ******************************************************************** -->
+<div class="login_header">
+ <a class="go_home" href="http://steeze.pl" title="STEEZE.PL">
+  STEEZE.PL
+ </a>
+</div>
+<script type="text/javascript">
+ var c = document.body.className;
+		c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+		document.body.className = c;
+</script>
+<script type="text/javascript">
+ /* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"http:\/\/steeze.pl\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Potwierd\u017a, \u017ce nie jeste\u015b robotem."}}};
+/* ]]> */
+</script>
+<script src="http://steeze.pl/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.0.2" type="text/javascript">
+</script>
+<script src="http://steeze.pl/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70" type="text/javascript">
+</script>
+<script src="http://steeze.pl/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4" type="text/javascript">
+</script>
+<script type="text/javascript">
+ /* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script src="http://steeze.pl/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=3.4.1" type="text/javascript">
+</script>
+<script type="text/javascript">
+ /* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_00359cd3fc66f68eaca5840c127560a2","fragment_name":"wc_fragments_00359cd3fc66f68eaca5840c127560a2"};
+/* ]]> */
+</script>
+<script src="http://steeze.pl/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=3.4.1" type="text/javascript">
+</script>
+<script src="http://steeze.pl/wp-content/themes/mrtailor/js/foundation.min.js?ver=5.2.0" type="text/javascript">
+</script>
+<script src="http://steeze.pl/wp-content/themes/mrtailor/js/foundation.interchange.js?ver=5.2.0" type="text/javascript">
+</script>
+<script src="http://steeze.pl/wp-content/themes/mrtailor/js/isotope.pkgd.min.js?ver=v2.0.0" type="text/javascript">
+</script>
+<script src="http://steeze.pl/wp-content/themes/mrtailor/js/imagesloaded.js?ver=v3.1.4" type="text/javascript">
+</script>
+<script src="http://steeze.pl/wp-content/themes/mrtailor/js/jquery.touchSwipe.min.js?ver=1.6.5" type="text/javascript">
+</script>
+<script src="http://steeze.pl/wp-content/themes/mrtailor/js/jquery.fitvids.js?ver=1.0.3" type="text/javascript">
+</script>
+<script src="http://steeze.pl/wp-content/themes/mrtailor/js/swiper.min.js?ver=3.3.1" type="text/javascript">
+</script>
+<script src="http://steeze.pl/wp-content/themes/mrtailor/js/owl.carousel.min.js?ver=1.3.1" type="text/javascript">
+</script>
+<script src="http://steeze.pl/wp-content/themes/mrtailor/js/fresco.js?ver=1.3.0" type="text/javascript">
+</script>
+<script src="http://steeze.pl/wp-content/themes/mrtailor/js/jquery.nanoscroller.min.js?ver=0.7.6" type="text/javascript">
+</script>
+<script src="http://steeze.pl/wp-content/themes/mrtailor/js/select2.min.js?ver=3.5.1" type="text/javascript">
+</script>
+<script src="http://steeze.pl/wp-content/themes/mrtailor/js/jquery.scroll_to.js?ver=1.4.5" type="text/javascript">
+</script>
+<script src="http://steeze.pl/wp-content/themes/mrtailor/js/jquery.stellar.min.js?ver=0.6.2" type="text/javascript">
+</script>
+<script src="http://steeze.pl/wp-content/themes/mrtailor/js/jquery.snapscroll.min.js?ver=1.6.1" type="text/javascript">
+</script>
+<script src="http://steeze.pl/wp-content/themes/mrtailor/js/easyzoom.js?ver=1.0" type="text/javascript">
+</script>
+<script src="http://steeze.pl/wp-content/themes/mrtailor/js/scripts.js?ver=1.0" type="text/javascript">
+</script>
+<script src="http://steeze.pl/wp-content/themes/mrtailor/js/wc-product-gallery.js?ver=1.0" type="text/javascript">
+</script>
+<script src="http://steeze.pl/wp-content/themes/mrtailor/js/wc-counters.js?ver=1.0" type="text/javascript">
+</script>
+<script src="http://steeze.pl/wp-includes/js/wp-embed.min.js?ver=4.9.6" type="text/javascript">
+</script>

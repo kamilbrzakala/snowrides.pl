@@ -1,0 +1,101 @@
+[
+    {
+        "Organizator": "SNOWMOTION",
+        "City": "Val Thorens",
+        "Country": "Francja",
+        "Date": "2018-12-14",
+        "Price": "1699.00",
+        "Free slots": "s¹ miejsca",
+        "Link": "https://www.snowmotion.pl/wyjazd/bonjour-val-thorens/160"
+    },
+    {
+        "Organizator": "SNOWMOTION",
+        "City": "Alpe d'Huez",
+        "Country": "Francja",
+        "Date": "2019-01-04",
+        "Price": "1699.00",
+        "Free slots": "s¹ miejsca",
+        "Link": "https://www.snowmotion.pl/wyjazd/yo-snow-alpe-dhuez/165"
+    },
+    {
+        "Organizator": "SNOWMOTION",
+        "City": "Orelle",
+        "Country": "Francja",
+        "Date": "2019-01-11",
+        "Price": "1549.00",
+        "Free slots": "s¹ miejsca",
+        "Link": "https://www.snowmotion.pl/wyjazd/this-is-it-orelle/178"
+    },
+    {
+        "Organizator": "SNOWMOTION",
+        "City": "Les 2 Alpes",
+        "Country": "Francja",
+        "Date": "2019-01-18",
+        "Price": "1749.00",
+        "Free slots": "s¹ miejsca",
+        "Link": "https://www.snowmotion.pl/wyjazd/white-lines-les-2-alpes/164"
+    },
+    {
+        "Organizator": "SNOWMOTION",
+        "City": "Alpe d'Huez",
+        "Country": "Francja",
+        "Date": "2019-01-25",
+        "Price": "1749.00",
+        "Free slots": "s¹ miejsca",
+        "Link": "https://www.snowmotion.pl/wyjazd/le-ferie-alpe-dhuez/166"
+    },
+    {
+        "Organizator": "SNOWMOTION",
+        "City": "Les 2 Alpes",
+        "Country": "Francja",
+        "Date": "2019-01-25",
+        "Price": "1849.00",
+        "Free slots": "s¹ miejsca",
+        "Link": "https://www.snowmotion.pl/wyjazd/la-ferie-les-2-alpes/173"
+    },
+    {
+        "Organizator": "SNOWMOTION",
+        "City": "Les 2 Alpes",
+        "Country": "Francja",
+        "Date": "2019-02-01",
+        "Price": "1849.00",
+        "Free slots": "s¹ miejsca",
+        "Link": "https://www.snowmotion.pl/wyjazd/snowbombing-les-2-alpes/174"
+    },
+    {
+        "Organizator": "SNOWMOTION",
+        "City": "Les 2 Alpes",
+        "Country": "Francja",
+        "Date": "2019-03-08",
+        "Price": "1849.00",
+        "Free slots": "s¹ miejsca",
+        "Link": "https://www.snowmotion.pl/wyjazd/ciut-za-mocno-les-2-alpes/161"
+    },
+    {
+        "Organizator": "SNOWMOTION",
+        "City": "Les 2 Alpes",
+        "Country": "Francja",
+        "Date": "2019-03-22",
+        "Price": "1799.00",
+        "Free slots": "s¹ miejsca",
+        "Link": "https://www.snowmotion.pl/wyjazd/lampa-i-sztruks-les-2-alpes/163"
+    },
+    {
+        "Organizator": "SNOWMOTION",
+        "City": "Orelle",
+        "Country": "Francja",
+        "Date": "2019-03-29",
+        "Price": "1549.00",
+        "Free slots": "s¹ miejsca",
+        "Link": "https://www.snowmotion.pl/wyjazd/ride-the-spring-orelle/181"
+    },
+    {
+        "Organizator": "SNOWMOTION",
+        "City": "Les 2 Alpes",
+        "Country": "Francja",
+        "Date": "2019-04-12",
+        "Price": "1649.00",
+        "Free slots": "s¹ miejsca",
+        "Link": "https://www.snowmotion.pl/wyjazd/white-spring-vibes-les-2-alpes/175"
+    }
+]

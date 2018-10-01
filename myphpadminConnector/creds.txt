@@ -1,0 +1,5 @@
+{
+"pma_servername":"xxxxx",
+"pma_username":"xxxxx",
+"pma_password":"xxxxx"
+}
