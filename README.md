@@ -1,8 +1,9 @@
 # snowrides.pl
 
-snowrides.pl is my own project developed for own purposes.
-snowrides.pl shows parsed data from several winter travel agencies websites.
-Basic target is to gather winter trips data in json format: 
+# snowrides.pl is my own project developed for own purposes.
+# snowrides.pl shows parsed data from several winter travel agencies websites.
+
+# Basic target is to gather winter trips data in json format: 
 {
             "Organizator": "FEELTHEFLOW",
             "City": "Livigno",
@@ -13,11 +14,11 @@ Basic target is to gather winter trips data in json format:
             "Link": "https://www.feeltheflow.pl/wyjazdy/livigno-hello-winter-vol-1-lux-2"
  }
 and show that data in front end.
-Json data is converted into csv file and exported into webhost provider's MySQL database.
+# Json data is converted into csv file and exported into webhost provider's MySQL database.
 
-If you would like to run ths backend, then you have to have installed on your local machine python3.7
+# If you would like to run ths backend, then you have to have installed on your local machine python3.7
 
-By running a script Downloads/MainClass.py
+# By running a script Downloads/MainClass.py
 You will run the following 3 scrpts:
 1. DownloadWebSitesHTML
 2. csvParser
